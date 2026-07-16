@@ -1,0 +1,1001 @@
+bug_id,bug_type,short_desc,product,component,assigned_to,bug_status,resolution,changeddate
+1477587,enhancement,Add a keyboard shortcut for deleting cookies and site data,Firefox,Keyboard Navigation,nobody,UNCONFIRMED, ---,2025-09-20 11:02:46
+1920026,defect,"Tab list should be visible with layout.css.devPixelsPerPx set to ""2''",Firefox,Sidebar,nobody,NEW, ---,2024-09-20 02:53:39
+1962702,defect,"Creating a new tab group ""New Group"" context menu item is not left align",Firefox,Tabbed Browser,nobody,NEW, ---,2025-04-25 07:46:38
+428378,enhancement,"Synced tabs, bookmarks, and history entries don't have a favicon until the user re-visits that page again",Firefox,Sync,nobody,REOPENED, ---,2025-11-22 17:38:14
+452376,defect,Input text element gets wrong keyup events,Firefox,General,nobody,REOPENED, ---,2026-02-18 01:22:10
+1408108,enhancement,"Rename ""Sync ID"" to ""record ID"" in the bookmarks engine and `PlacesSyncUtils`",Firefox,Sync,1991manish.kumar,RESOLVED,FIXED,2017-11-07 03:01:07
+1417698,enhancement,Use mozilla recommended eslint rules and remove rules duplicating those recommendations,Firefox,WebPayments UI,2042,RESOLVED,FIXED,2018-04-30 18:25:26
+1471695,enhancement,Add installed add-ons targeting to AS Router,Firefox,Messaging System,a.hillier,RESOLVED,FIXED,2019-06-25 12:33:33
+1476688,enhancement,Support block/cap by provider,Firefox,Messaging System,a.hillier,RESOLVED,FIXED,2019-06-25 12:33:36
+1478218,defect,"Intermittent browser/extensions/activity-stream/test/functional/mochitest/browser_asrouter_targeting.js | should select correct item when filtering by lastVisitDate - Got undefined, expected [object Object]",Firefox,New Tab Page,a.hillier,RESOLVED,FIXED,2019-06-28 14:29:46
+1482464,defect,Unpin stops working in Top Sites / TypeError: e.identifier is null,Firefox,New Tab Page,a.hillier,RESOLVED,FIXED,2019-06-28 14:29:46
+1484030,enhancement,Chiclet animation for CFR,Firefox,Messaging System,a.hillier,RESOLVED,FIXED,2019-06-25 11:55:10
+1443771,defect,Change Firefox about dialogue visual on ESR,Firefox,General,aalhazwani,RESOLVED,FIXED,2018-05-16 14:49:45
+276934,defect,"After closing tab, Space doesn't scroll down one page",Firefox,Keyboard Navigation,aaronlev,RESOLVED,DUPLICATE,2006-03-12 18:14:38
+280055,defect,Cannot walk into accessible tree for 2nd tab,Firefox,Disability Access,aaronlev,RESOLVED,FIXED,2019-05-03 14:53:25
+1631439,enhancement,"Rewrite callers of document.createElementNS(XUL_NS, ...) to use document.createXULElement(...)",Firefox,General,aarushivij,RESOLVED,FIXED,2020-04-20 14:53:00
+1354140,enhancement,[UX] Provide design spec for customize mode,Firefox,Toolbars and Customization,abenson,RESOLVED,FIXED,2017-04-25 05:16:01
+1358167,enhancement,[UX] Provide detailed spec for sync widget at top of new (photon) hamburger panel,Firefox,Toolbars and Customization,abenson,RESOLVED,FIXED,2017-05-02 08:39:17
+1360054,enhancement,"[UX] Need spec for the page-action menu's ""Share"" submenu/subview/subpanel",Firefox,Address Bar,abenson,RESOLVED,FIXED,2017-05-08 13:13:39
+1589425,enhancement,Promoting Picture in Picture using CFR,Firefox,Messaging System,abenson,RESOLVED,WONTFIX,2019-12-10 17:56:37
+1445732,defect,Muting tab causes lazy browser premature insertion,Firefox,Session Restore,ablayelyfondou,RESOLVED,FIXED,2018-03-27 11:43:41
+1524852,defect,tab titles of multiselected tabs are invisible,Firefox,Theme,ablayelyfondou,RESOLVED,FIXED,2019-02-08 00:56:04
+1588883,defect,Fullscreen transition message doesn't appear anymore,Firefox,General,ablayelyfondou,RESOLVED,FIXED,2022-01-10 05:48:53
+1234415,defect,Create telemetry dashboard for key health/usage Sync probes,Firefox,Sync,adavis,RESOLVED,FIXED,2016-10-24 15:28:23
+1290976,defect,Add analytics for clicks on send tab notification UI,Firefox,Sync,adavis,RESOLVED,DUPLICATE,2016-08-11 08:44:28
+1319576,defect,Create Dashboard for Validation Data in ReDash,Firefox,Sync,adavis,RESOLVED,DUPLICATE,2018-09-24 14:26:32
+1476034,enhancement,about:crashes localization migration from DTD to Fluent,Firefox,General,adeschamps,RESOLVED,FIXED,2018-08-05 07:53:56
+1476062,enhancement,[meta] about:crashes user interface update,Firefox,General,adeschamps,RESOLVED,FIXED,2018-12-12 07:12:08
+470314,defect,Send a bookmarks-restore notification,Firefox,Bookmarks & History,adw,RESOLVED,FIXED,2009-11-26 05:43:36
+775825,defect,Add telemetry to measure index and type of the selected awesomebar result,Firefox,General,adw,RESOLVED,FIXED,2015-09-02 03:16:06
+959567,defect,[User Story] Implement search suggestions opt-in/out UI,Firefox,Search,adw,RESOLVED,FIXED,2019-01-22 11:59:30
+959594,defect,Retrieving the results from the default search provider,Firefox,Search,adw,RESOLVED,FIXED,2015-10-07 09:06:29
+1060367,defect,[e10s] Search engine add-ons using POST do not work with e10s,Firefox,Search,adw,RESOLVED,WORKSFORME,2015-09-23 12:27:36
+1162142,defect,[User Story] Search Suggestions in the AwesomeBar should be clearly identified as such,Firefox,Search,adw,RESOLVED,FIXED,2015-06-29 05:20:15
+1162283,defect,Add support for limited hard-coded localizations to Pocket,Firefox,Pocket,adw,RESOLVED,FIXED,2015-09-16 11:59:04
+1173751,defect,Add unit tests for search suggestions in awesomebar,Firefox,Address Bar,adw,RESOLVED,FIXED,2015-06-24 09:59:37
+1176107,defect,"Search suggestions in awesomebar: highlighting a suggestion doesn't place it into the input, and selecting a suggestion doesn't actually search with it",Firefox,Search,adw,RESOLVED,FIXED,2019-11-27 13:31:29
+1187901,defect,Some OpenSearch plugins does not work properly if the input contains UPPERCASE,Firefox,Search,adw,RESOLVED,FIXED,2017-04-04 14:38:14
+1195054,defect,The location bar should displays 10 autocomplete suggestions without scrollbar instead of 6,Firefox,Address Bar,adw,RESOLVED,FIXED,2016-04-11 00:47:51
+1198683,defect,Search suggestions prompt breaks accessibility of location bar suggestions,Firefox,Address Bar,adw,RESOLVED,FIXED,2015-09-22 16:00:02
+1198687,defect,Search suggestions prompt unusable by screen reader users,Firefox,Address Bar,adw,RESOLVED,FIXED,2015-11-27 07:51:34
+1200322,defect,Bad a11y when pressing Left and Right while the urlbar autocomplete popup is focused,Firefox,Address Bar,adw,RESOLVED,FIXED,2017-01-01 03:16:33
+1201017,defect,"TypeError: styles.includes is not a function in resource:///components/nsBrowserGlue.js line 501, 61",Firefox,General,adw,RESOLVED,FIXED,2015-09-04 13:13:26
+1207375,defect,urlbar a11y still broken by search suggestions opt-in prompt/notification,Firefox,Address Bar,adw,RESOLVED,FIXED,2015-10-09 12:28:44
+1226629,defect,"Searches initiated by clicking the action row in the locationbar don't increment the ""search"" / ""urlbar"" telemetry countable",Firefox,Address Bar,adw,RESOLVED,FIXED,2016-01-12 09:36:32
+1262783,defect,Excessively cropped results in new Awesome Bar style,Firefox,Address Bar,adw,RESOLVED,FIXED,2016-04-08 03:07:40
+1295458,defect,Rework key and mouse handling for the one-off search buttons,Firefox,Address Bar,adw,RESOLVED,FIXED,2022-03-17 15:07:20
+1303781,defect,Sometimes selecting a history entry opens a Google search instead of navigating to the entry,Firefox,Address Bar,adw,RESOLVED,FIXED,2017-05-31 05:50:48
+1326826,defect,Popup with search suggestions hides on 'mousedown' over some buttons,Firefox,Search,adw,RESOLVED,DUPLICATE,2017-02-22 13:20:06
+1328104,defect,Add Search Engine Button Does Not Work,Firefox,Search,adw,RESOLVED,DUPLICATE,2017-03-31 07:05:33
+1358676,defect,One-off hover/mouseover color should be darker to match spec,Firefox,Address Bar,adw,RESOLVED,INVALID,2017-04-28 19:10:59
+1374477,enhancement,"Photon API for adding, removing, and moving page actions",Firefox,Menus,adw,RESOLVED,FIXED,2017-10-25 14:55:46
+1377535,defect,Icons in page action popup should explicitly set a fill color,Firefox,Theme,adw,RESOLVED,WORKSFORME,2017-08-09 04:41:59
+1380021,defect,Tests for showing the Page Action device sub-menu have a 5 second waits in them,Firefox,Toolbars and Customization,adw,RESOLVED,FIXED,2017-09-21 15:56:57
+1384256,defect,uninterruptible reflow at _openAutocompletePopup@chrome://browser/content/urlbarBindings.xml:1854,Firefox,Address Bar,adw,RESOLVED,FIXED,2017-10-06 11:53:00
+1386474,defect,Pocket shouldn't assume that Photon page actions are enabled,Firefox,Address Bar,adw,RESOLVED,FIXED,2017-08-22 09:30:14
+1391082,defect,Page action panel ordering can get messed up,Firefox,Menus,adw,RESOLVED,FIXED,2017-09-01 11:29:17
+1392733,defect,Disabled state is not synced from page action menu items to the corresponding urlbar icon,Firefox,General,adw,RESOLVED,FIXED,2017-11-14 16:17:49
+1393237,defect,Bookmark star has wrong tooltip after bookmarking a page,Firefox,General,adw,RESOLVED,FIXED,2017-12-10 23:41:33
+1395387,enhancement,Reconcile WebExtension page actions and Photon page actions,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-07-31 02:53:32
+1402272,defect,Evaluate a different approach for adjustSiteIconStart,Firefox,Address Bar,adw,RESOLVED,FIXED,2017-10-10 06:29:21
+1410240,defect,Search suggestions keep displacing awesomebar results as I'm about to click on them,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-03-28 06:58:01
+1413574,defect,Disabled page actions should be hidden,Firefox,Toolbars and Customization,adw,RESOLVED,FIXED,2018-02-06 11:13:13
+1417272,enhancement,"The ""Send Tab to Device"" page action can be disabled in the page action menu but enabled in the urlbar",Firefox,Address Bar,adw,RESOLVED,FIXED,2017-11-17 02:06:28
+1423247,defect,Couple Awesome Bar Composition (matchBuckets pref) to user's Address bar state (unified vs. 2 bar),Firefox,Address Bar,adw,RESOLVED,WONTFIX,2018-01-18 08:19:37
+1431489,defect,Follow-up fix: Allow users to choose whether search suggestions or history suggestions come first in the address bar.,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-01-22 12:23:42
+1438329,enhancement,Problem(s) with delayed key handling in urlbar,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-05-07 18:09:10
+1444548,defect,Backout search composition work from 59,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-04-11 10:42:07
+1446551,defect,"""too much recursion"" when pressing enter in location bar",Firefox,Address Bar,adw,RESOLVED,FIXED,2018-06-28 09:53:55
+1450294,enhancement,Page action menu is too narrow for complex actions (e.g. adding a search engine),Firefox,Address Bar,adw,RESOLVED,FIXED,2018-05-10 00:29:00
+1459966,defect,browser/modules/test/browser/browser_UsageTelemetry_urlbar.js is going to permafail because probe FX_URLBAR_SELECTED_RESULT_METHOD expires when the Gecko version number is bumped to 63 on 2018-06-25,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-11-19 05:02:57
+1464154,defect,Most of origins I use very often are not being autofilled,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-10-19 00:14:43
+1480503,enhancement,Create API for setting text (keyword) in and focusing on the awesomebar,Firefox,New Tab Page,adw,RESOLVED,FIXED,2019-06-28 14:29:46
+1481837,defect,2.65% tresize (osx-10-10) regression on push b5ba45e6ac73574c9e6bee886929f684e39de2c8 (Tue Aug 7 2018),Firefox,Address Bar,adw,RESOLVED,FIXED,2018-08-29 10:37:28
+1483033,defect,Removal of screenshot icon from address bar does not persist across a restart,Firefox,Toolbars and Customization,adw,RESOLVED,FIXED,2025-03-02 06:57:51
+1484067,defect,Search em-dash should be hidden when search query only contains spaces,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-09-14 05:01:43
+1489282,enhancement,Create a preferences module that can be used across all components,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-09-18 19:24:31
+1489834,defect,"Send Tab to Device page action button tooltips says ""sendToDevice-title""",Firefox,Toolbars and Customization,adw,RESOLVED,FIXED,2018-10-03 09:37:37
+1490527,enhancement,Use UrlbarPreferences.jsm in UnifiedComplete.js,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-09-19 13:34:50
+1492226,enhancement,Move UnifiedComplete.js to browser/components/urlbar,Firefox,Address Bar,adw,RESOLVED,WONTFIX,2019-01-24 16:56:13
+1495127,enhancement,Screenshot's page action should set the new `pinned` manifest option to false so that it doesn't appear in the urlbar by default,Firefox,Screenshots,adw,RESOLVED,FIXED,2018-10-05 10:43:21
+1497515,defect,Most recently used search engine keyword is highlighted on internal pages even without interacting with the urlbar,Firefox,Address Bar,adw,RESOLVED,FIXED,2018-10-23 16:56:43
+1499193,defect,Add keyword specific telemetry,Firefox,Search,adw,RESOLVED,FIXED,2018-12-13 12:22:23
+1504370,defect,Update SEARCH_COUNTS telemetry for private browsing mode,Firefox,Search,adw,RESOLVED,FIXED,2019-01-21 08:51:23
+1504847,enhancement,Disable search shortcut highlighting etc. for non-@ shortcuts,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-18 02:54:26
+1511529,enhancement,Add matched substrings to UrlbarMatch,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-04-20 02:15:26
+1512110,enhancement,Implement selection/highlighting,Firefox,Address Bar,adw,RESOLVED,DUPLICATE,2018-12-06 18:17:45
+1520317,enhancement,The view should respect the queryContext.preselected flag,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-17 14:04:03
+1520326,enhancement,UrlbarProviderUnifiedComplete should set context.preselected in more cases than it currently does,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-16 20:33:41
+1520342,enhancement,QueryContext.autofill is variously spelled autofill and autoFill,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-16 20:33:48
+1520368,enhancement,Clarify the queryContext.autofill property and add an enableAutofill property,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-16 20:33:51
+1520655,enhancement,UnifiedComplete provider should pass prohibit-autofill param when autofill is disabled,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-17 14:04:14
+1520665,enhancement,"Replace context.autofill property with autofillValue, and make the UnifiedComplete provider set it based on result.getValueAt()",Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-17 14:04:18
+1520668,defect,UnifiedComplete should set the default index before adding search @alias autofill matches,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-17 14:04:20
+1521236,enhancement,"Add UrlbarInput.autofill(), call it from the controller, and disable autofill when the new search string is a prefix of the old string",Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-23 19:53:27
+1522280,enhancement,Add autofill tests,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-06-03 17:29:56
+1523773,defect,"The heuristic result's secondary text should be ""Visit"" when it's a URL",Firefox,Address Bar,adw,RESOLVED,FIXED,2022-05-17 07:29:51
+1523774,defect,"When a search @alias is typed, the heuristic result title shouldn't include an em dash (""—"")",Firefox,Address Bar,adw,RESOLVED,FIXED,2019-01-31 20:00:15
+1523799,defect,"The secondary em dash (""—"") is gray when its row is selected, but it should be white",Firefox,Address Bar,adw,RESOLVED,FIXED,2022-01-10 04:24:30
+1524702,enhancement,URL results should use their domain names as their titles when they don't otherwise have titles,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-02-06 21:13:14
+1524714,enhancement, @ by itself should show all the engine @aliases,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-02-18 07:42:59
+1524718,defect,Autofill should be restored after the heuristic result is re-selected,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-02-06 21:13:19
+1525487,enhancement,"Clicking a search alias offer result should fill the alias in the input, not visit the engine's site",Firefox,Address Bar,adw,RESOLVED,FIXED,2019-02-17 13:46:08
+1525772,defect,Selecting search suggestions after typing an @alias should keep the @alias in the input,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-03-13 16:57:33
+1525909,defect,QuantumBar: Cursor position is changed when editing an entry,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-07-15 14:02:26
+1528430,defect,The search performed on a search suggestion result when a one-off button is selected is incorrect,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-02-19 20:07:58
+1538117,defect,Some typed chars get eaten by Quantum Bar autofill,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-03-28 06:36:13
+1538293,enhancement,Autofill still flickers when typing in all caps,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-03-26 21:48:59
+1545742,defect,the Quantum bar input field intermittently stops handling LEFT/RIGHT/HOME/END key events,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-05-03 15:10:37
+1547670,task,Implement the top sites experiment extension,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-09-17 14:51:05
+1550584,defect,The space around the identity box separator/divider is now asymmetrical,Firefox,Address Bar,adw,RESOLVED,WORKSFORME,2022-01-10 04:44:51
+1552410,defect,Intermittent browser/components/urlbar/tests/browser/browser_tabMatchesInAwesomebar.js | Should have been found in autocomplete - false == true - JS frame :: chrome://mochitests/content/browser/browser/components/urlbar/tests/browser/browser...,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-09-01 02:28:23
+1563073,defect,"JavaScript warning: resource:///modules/UrlbarView.jsm, line 123: Array.reduce is deprecated; use Array.prototype.reduce instead",Firefox,Address Bar,adw,RESOLVED,FIXED,2019-07-03 20:36:32
+1566932,task,Add new docs directory in browser/components/urlbar and move AddressBar.rst there,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-07-23 20:59:46
+1569812,task,"Allow extensions to specify search engines by name, URL, or alias",Firefox,Address Bar,adw,RESOLVED,FIXED,2019-08-03 12:24:41
+1571161,task,Modify openViewOnFocus so that it doesn't open the view on the newtab page and private windows,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-01-10 11:30:45
+1571913,task,Keyword offer (search shortcut) improvements for top sites experiment extension,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-08-21 11:01:06
+1572500,defect,keyword based searches - double counting of search volume,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-08-22 14:58:22
+1576888,defect,Stop using px values for #urlbar-contextual-tip's and #urlbar-contextual-tip-button's font sizes,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-09-15 11:33:34
+1576889,defect,Ensure Quantum Bar Contextual Tip looks correct in RTL builds,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-09-15 11:32:21
+1591327,defect,Properly limit results to maxResults while taking result spans into account.,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-10-30 06:09:39
+1592172,defect,Don't reuse tip results or try to update the overflow state of their nonexistent URLs,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-09-01 02:22:50
+1594276,task,Fix browser_keepStateAcrossTabSwitches.js to work with Fission,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-15 14:34:37
+1594622,task,Remove the context.preselected property and rely on result.heuristic instead,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-25 07:58:41
+1595328,task,[Nudges] Need a way to tell whether the current session is after an update or new install,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-15 03:05:00
+1595641,task,[Nudges] Let browser.urlbar.search take an option to control focus in the urlbar input,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-13 21:53:21
+1595653,task,[Nudges] Let extensions set the urlbar value or at least clear it,Firefox,Address Bar,adw,RESOLVED,WONTFIX,2019-11-13 13:36:15
+1595678,defect,Intermittent TV browser/components/urlbar/tests/ext/browser/browser_ext_urlbar_isBrowserShowingNotification.js | true == false - JS frame :: chrome://mochitests/content/browser/browser/components/urlbar/tests/ext/browser/browser_ext_urlbar_is...,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-17 22:18:35
+1595985,task,[Nudges] Let extensions close the urlbar view,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-14 09:17:50
+1597077,defect,Fix padding for tip results,Firefox,Address Bar,adw,RESOLVED,FIXED,2022-01-10 05:53:27
+1597610,task,Add browser.urlbar.onEngagement WebExtensions API,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-26 03:48:43
+1597755,task,[Interventions] Make query matching less aggressive by not using the mean edit distance,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-20 09:53:28
+1597904,task,[Interventions] Create the main background script for the interventions extension,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-04 14:43:47
+1598107,task,onResultPicked needs to indicate it's handling user input,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-23 01:56:47
+1598368,task,[Nudges] The button of the redirect tip shown on the search engine page should not be preselected/heuristic,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-11-22 13:50:33
+1600860,task,[Interventions] The extension needs a way to install an update and restart for users who have opted out of automatic updates,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-09 01:45:36
+1601474,task,[Interventions] Add the remaining app-update cases to the main script,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-05 17:46:43
+1601522,task,[Interventions] Open user survey web pages in certain scenarios,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-12 09:50:17
+1601900,task,[Nudges] Engaging with the urlbar should cause tips not to be shown anymore in any session,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-06 09:35:15
+1602953,task,Don't use the fade gradient for tip text,Firefox,Address Bar,adw,RESOLVED,WONTFIX,2019-12-10 15:01:18
+1603503,defect,[Nudges] Non-.com Google domains in English-speaking locales should be recognized as search home pages,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-13 07:05:13
+1604387,task,[Interventions] QueryScorer improvements,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-18 10:23:33
+1604685,task,[Interventions] Open the survey page a maximum of 3 times,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-18 14:06:04
+1604692,task,[Interventions] Don't open the survey page once the user has started it,Firefox,Address Bar,adw,RESOLVED,FIXED,2019-12-19 13:44:44
+1608461,task,Determine what kind of telemetry in-product Search Tips should collect,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-02-22 02:02:01
+1608597,defect,[Nudges] Top sites will conflict with the nudges/tips experiment on 74,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-02-20 18:25:33
+1608601,defect,"[Nudges] Urlbar input isn't cleared after clicking the redirect tip's ""Okay, Got It"" button",Firefox,Address Bar,adw,RESOLVED,FIXED,2020-01-14 18:11:22
+1608613,task,[Nudges] Call browser.experiments.urlbar.clearInput() from the extension to clear the input when the redirect tip is picked,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-01-11 18:59:32
+1610681,defect,UrlbarView needs to select the heuristic result when it's not the first result added,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-01-29 18:43:42
+1613314,defect,"2.03 - 3.26% sessionrestore / startup_about_home_paint / ts_paint (linux64-shippable, windows10-64-shippable) regression on push 4f83b17d63bffb866843ca3a687b33d94a8b84cd (Mon February 3 2020)",Firefox,Address Bar,adw,RESOLVED,FIXED,2020-02-13 09:00:56
+1614087,task,Make user-testing builds that migrate prefs and the default search engine,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-10-21 19:28:17
+1614090,task,Make initial proposal for letting experiment extensions create their own result types with custom views,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-06-11 18:06:16
+1614092,task,"Make proposal v2 for letting experiment extensions create their own result types with custom views, plus prototype",Firefox,Address Bar,adw,RESOLVED,DUPLICATE,2020-06-11 18:06:02
+1617076,task,Force the muxer to ignore built-in tips when extension tips are present,Firefox,Address Bar,adw,RESOLVED,WONTFIX,2020-02-24 16:52:49
+1617345,defect,Disabling top sites on new tab causes top sites not to be shown in the urlbar after restarting Firefox,Firefox,Address Bar,adw,RESOLVED,FIXED,2020-07-22 15:16:37
+1625254,defect,NVDA screen reader doesn’t read the intervention cards “Get Help” button on mouseover,Firefox,Address Bar,adw,RESOLVED,WONTFIX,2020-04-29 12:27:56
+1572084,defect,SessionStoreListener code tries to read layout and form data for windows loaded in a different child process,Firefox,Session Restore,afarre,RESOLVED,FIXED,2023-08-15 10:13:36
+1596812,enhancement,Web-based stub installer UI (HTML/JS/CSS),Firefox,Installer,agashlin+bz,RESOLVED,FIXED,2020-04-28 07:16:50
+1598111,task,Document full install ping,Firefox,Installer,agashlin+bz,RESOLVED,FIXED,2020-06-25 09:14:23
+1495671,enhancement,Content Blocking Tour breaks on step 3 with only cookie restrictions enabled,Firefox,Protections UI,agibson,RESOLVED,FIXED,2018-10-18 10:33:46
+1168479,defect,[UX] Design a treatment for handling automatic https redirect from http version of site,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:11:33
+1174225,defect,"[UX] A quick prototype of the TP in PBM experience, including full first-run UX, opt-out, and functional demonstration ongoing experience.",Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:12:15
+1174787,defect,[UX] Create design spec for url bar and doorhanger for 42 release of tracking protection and site identity block,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:11:58
+1175206,defect,[UX] Create tracking protection onboarding design for users opening a link in a private window,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:12:51
+1176256,defect,[UX] Create design spec for final onboarding assets for tracking protection in private browsing mode,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:11:43
+1184586,defect,[UX] Create and launch usertesting.com research to test shield animation for TP in Private Browsing mode,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:13:11
+1186166,defect,[UX] Create spec for hover tooltip string for shield and lock target,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:11:11
+1186170,defect,[UX] Provide more visual information about what’s new on Built-in Private window page,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:14:09
+1188101,defect,[UX] Update control center for 43 release to support permissions and tracking protection,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:12:38
+1190504,defect,[UX] design new notification style for permissions in control center v2,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:11:56
+1190507,defect,[UX] Provide final deliverables for login manager in Control Center v2,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:12:33
+1204619,defect,[UX] Finalize permissions notification treatment for camera and microphone over http,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:11:22
+1206249,defect,[UX] Icons with strikethrough for each permission,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:14:06
+1207204,defect,[UX] Spec out animation for new identity block in control center 2,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:13:03
+1217150,defect,[UX] create design spec for insecure password feedback over https on login/password form field,Firefox,General,agrigas,RESOLVED,FIXED,2017-01-25 05:48:47
+1218891,defect,"[UX] Explore CC TP subpanel which displays trackers by category (ads, analytics, social, etc) / website",Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:13:12
+1225534,defect,[UX] Create design for tracking protection in reg mode in privacy prefs,Firefox,General,agrigas,RESOLVED,FIXED,2016-05-10 09:12:22
+1553700,task,DNS over HTTPS Heuristics Measurement Add-on,Firefox,General,ahounsel,RESOLVED,FIXED,2019-08-23 11:18:28
+1345322,defect,Create the preference privacy.resistFingerprinting in firefox.js,Firefox,Settings UI,ahsin.tseng,RESOLVED,FIXED,2017-10-21 16:58:42
+1394137,defect,Stop changing the Go button's color on hover,Firefox,Theme,akriti.v10,RESOLVED,FIXED,2017-09-25 17:22:43
+1497144,enhancement,Convert DocShellCapabilities.jsm and ScrollPosition.jsm to C++,Firefox,Session Restore,alchen,RESOLVED,FIXED,2019-07-09 05:46:58
+1497146,enhancement,Convert FormData.jsm to C++,Firefox,Session Restore,alchen,RESOLVED,FIXED,2019-07-09 05:46:58
+1497147,enhancement,"Rewrite ""mapFrameTree"" implementation to C++",Firefox,Session Restore,alchen,RESOLVED,FIXED,2019-07-09 05:46:58
+1562889,task,Convert content-sessionStore to C++ : add browser epochs support,Firefox,Session Restore,alchen,RESOLVED,FIXED,2019-07-18 06:25:16
+1567057,defect,NS_ERROR_FILE_NOT_FOUND in SessionStoreFunctions.jsm,Firefox,Session Restore,alchen,RESOLVED,FIXED,2022-01-10 05:08:24
+1313825,defect,Investigate and enable the browser_UsageTelemetry_content_aboutHome.js test,Firefox,Search,alessio.placitelli,RESOLVED,FIXED,2016-11-09 08:26:57
+1314650,defect,"Fix the ""Unknown source for one-off search: urlbar"" error when doing one-off searches",Firefox,Search,alessio.placitelli,RESOLVED,FIXED,2016-11-09 08:27:12
+1315650,defect,Intermittent browser_UsageTelemetry_searchbar.js | Test timed out -,Firefox,Address Bar,alessio.placitelli,RESOLVED,FIXED,2018-09-03 11:15:45
+1318333,defect,SEARCH_COUNTS is not counting one-off searches,Firefox,Search,alessio.placitelli,RESOLVED,FIXED,2016-11-24 07:33:34
+1411984,enhancement,Switch to using buffered IO for writing event stream in print IPC,Firefox,PDF Viewer,alex.gaynor,RESOLVED,FIXED,2017-11-03 03:13:43
+1383943,defect,Softvision Testing Request for Exposing Send Tab Feature to Non-FxA Users,Firefox,Sync,alexandru.simonca,RESOLVED,FIXED,2017-10-16 15:48:58
+1328756,defect,Add a pref for and options to the Long Press of the plus button,Firefox,Tabbed Browser,amarchesini,RESOLVED,FIXED,2017-01-13 15:46:00
+1398229,defect,"""Save Link As..."" on a link that requires auth doesn't work the same in a container tab",Firefox,File Handling,amarchesini,RESOLVED,FIXED,2020-12-10 03:35:20
+1419589,enhancement,Ensure all storage is removed when resetDefault() is called within the ContextualIdentity service,Firefox,Security,amarchesini,RESOLVED,FIXED,2017-11-29 14:50:26
+1476715,defect,Differentiate between firstparty/thirdparty or thirdparty tracking channels,Firefox,Protections UI,amarchesini,RESOLVED,FIXED,2018-08-13 11:02:27
+1480197,defect,Crash in the content process due to an assertion in AntiTrackingCommon.cpp,Firefox,Protections UI,amarchesini,RESOLVED,DUPLICATE,2018-08-30 07:31:03
+1488635,enhancement,Add a test with the cookie permission for the image cache case,Firefox,Protections UI,amarchesini,RESOLVED,FIXED,2024-09-25 05:52:23
+1509132,enhancement,"AntiTracking needs to re-GetLocalStorage() when granting storage access to a parent window to ensure ""storage"" events are hooked up when switching from PartitionedLocalStorage",Firefox,Protections UI,amarchesini,RESOLVED,FIXED,2018-11-26 12:16:39
+1512141,defect,[Content Blocking] We don't dispatch STATE_COOKIES_BLOCKED_TRACKER when the response comes from the cache,Firefox,Protections UI,amarchesini,RESOLVED,DUPLICATE,2018-12-19 07:56:31
+1514773,defect,User is unable to login to Pinterest via Google account while content blocking is set to Standard,Firefox,Protections UI,amarchesini,RESOLVED,DUPLICATE,2019-01-03 15:19:23
+1353434,enhancement,[ux] New download animation for photon + SVG assets,Firefox,Theme,amlee,RESOLVED,FIXED,2017-06-21 16:27:15
+1353436,enhancement,[ux] SVG assets for new bookmark star animation,Firefox,Theme,amlee,RESOLVED,FIXED,2017-08-03 07:15:18
+1353437,enhancement,[ux] SVG assets for new bookmark library animation,Firefox,Theme,amlee,RESOLVED,FIXED,2017-07-18 12:39:07
+1355923,enhancement,[UX] Save to Pocket should have an associated animation,Firefox,General,amlee,RESOLVED,FIXED,2017-07-27 08:04:28
+481327,defect,Script gets stuck during startup,Firefox,Sync,anant,RESOLVED,FIXED,2018-09-24 14:24:50
+509552,defect,Making Client handle 401s correctly,Firefox,Sync,anant,RESOLVED,FIXED,2018-09-24 14:24:50
+1313798,defect,Remove Date.prototype.toLocaleFormat uses in services/sync,Firefox,Sync,andrebargull,RESOLVED,FIXED,2018-09-24 14:24:50
+1319937,defect,Remove String generics uses in services/sync,Firefox,Sync,andrebargull,RESOLVED,FIXED,2016-11-30 06:49:10
+1421430,enhancement,Add a URL field the Top Site editor so users can pick their own imagery,Firefox,New Tab Page,andrei.br92,RESOLVED,DUPLICATE,2019-06-28 14:29:46
+1421432,enhancement,Imported bookmarks don't show up in Highlights,Firefox,New Tab Page,andrei.br92,RESOLVED,INVALID,2019-06-28 14:29:46
+1425457,enhancement,Include some extra info to user event ping for top sites,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1428108,enhancement,set browser.newtabpage.activity-stream.debug by default in local builds,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 12:32:58
+1429119,enhancement,Revert bug 1422246 - Special handling of about:newtab on session restore,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1430859,enhancement,Implement persistence for isEnabled/isCollapsed for sections that works with webextension sections,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 02:39:59
+1433227,enhancement,Different sharedCache reference between migrated LinksCache objects,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1434372,enhancement,"Refactor code that adds a new Topsite, save vs add",Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1434937,enhancement,Further refactor TopSites component,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1438368,defect,Snippet blocks are still not syncing between about:home and about:newtab,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 02:40:04
+1441278,defect,Missing line numbers in failing unit tests,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 03:43:38
+1442992,defect,"regression: top sites not shown after startup (browser.newtabpage.activity-stream.feeds.section.topstories.options;"""")",Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1445157,enhancement,Implement persistence for isCollapsed using IndexedDB,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 02:40:10
+1449223,enhancement,Telemetry for failed IndexedDB transactions,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 02:40:33
+1450875,defect,"Intermittent browser_appid_localhost.js,browser_jsonview_copy_headers.js,browser_sanitize-formhistory.js,browser_favicon_load.js | A promise chain failed to handle a rejection: this.store.getState(...).Sections.find(...) is undefined",Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1456145,enhancement,Add impression ping for AS router snippets,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2021-11-29 03:44:10
+1457233,enhancement,Allow AS router message content to include subset of HTML,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2022-08-01 09:03:08
+1460782,defect,"Perma JavaScript error: resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///home/cltbld/workspace/build/application/firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js, line 33: TypeError: NetworkError",Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 02:39:40
+1463836,enhancement,AS Router Remote Provider Message Previewing,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2021-11-29 02:32:16
+1465178,enhancement,Telemetry source in AS Router is null,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:55:14
+1465818,enhancement,Add semver-based version to templates in AS Router,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 12:32:27
+1467449,defect,ASRouter bundle is null,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 02:34:13
+1468978,enhancement,Add rich types for AS Router template schema,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2021-11-29 02:32:24
+1478569,enhancement,New Action: Show AppMenu,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:55:51
+1479413,enhancement,Modify the way AS router handles snippet preview endpoints,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1479744,defect,"Perma-fail [Test-Verfy] browser/base/content/test/about/browser_aboutHome_search_composing.js | waitForDocLoadAndStopIt: The expected URL was loaded - Got http://mochi.test:8888/?terms=xfoo, expected http://mochi.test:8888/?terms=xbar",Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-12-16 03:37:00
+1481597,enhancement,Update fillSearchTopSiteTerm to use keyword awesomebar api,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1482246,defect,Failing tests should make taskcluster red,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1482484,enhancement,Too many pinned links causes RangeError: invalid array length,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1484031,enhancement,CFR doorhanger template schema,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 12:32:24
+1484724,enhancement,Figure out localization strategy for CFR,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 12:33:20
+1485418,enhancement,Land UI strings in .ftl file,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 12:34:14
+1486481,enhancement,Localization fallback strategy for CFR messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 12:32:34
+1486909,defect,"JavaScript error TopSitesFeed setting getter-only property ""_currentSearchHostname""",Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1487406,enhancement,Update ExtensionDoorhanger schema to include overrides,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1488314,defect,New Tab page items sometimes misaligned,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1492085,enhancement,Add ASR Snippets Fxa Template,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:54:04
+1496352,enhancement,Add ASR snippets action for SHOW_FIREFOX_ACCOUNTS,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1497261,defect,Revert parameter rename for INSTALL_ADDON_FROM_URL,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1497498,defect,"The ""CFR Recommendation"" add-ons cannot be installed anymore",Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-06-25 12:32:40
+1498630,enhancement,ASRouter Targeting Devtools,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:56:44
+1499358,enhancement,Snippets Simple Template Schema incompatibility with button_url,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1501816,enhancement,Add message and targeting to Pin Tab CFR,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-06-25 11:15:34
+1502266,defect,Activity Stream falsely assumes @mozilla.org/updates/update-checker;1 is always present,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1502430,enhancement,Mochitest for the redirect scenario + CFR notifications,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1503693,enhancement,CFR button should persist in the URL bar until excused,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:15:30
+1508669,enhancement,update dev-dependencies,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1508744,enhancement,Instrument pin tab event,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:15:27
+1509755,defect,Intermittent failure caused by ASRouterTriggerListeners.init() potentially accessing win.gBrowser before DOMContentLoaded has run,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1511156,enhancement,windows attribution data is double encoded,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-04-29 07:23:30
+1511804,enhancement,CFRPageActions tries to wait for a layout flush but doesn't,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1513317,enhancement,Emergency off plan for about:welcome experiences based on site attribution - in this case Return to AMO,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-06-25 12:33:37
+1513819,enhancement,Snippets Targeting: Local time,Firefox,Messaging System,andrei.br92,RESOLVED,WONTFIX,2019-12-03 05:00:32
+1514749,defect,"The ""CFR"" recommendations are not triggered on Firefox Release 64",Firefox,New Tab Page,andrei.br92,RESOLVED,INVALID,2019-06-28 14:29:46
+1517342,defect,"Taskcluster fails with ""$TASKCLUSTER_ROOT_URL must be set""",Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1522551,enhancement,Mock experiment enrollment via ASRouter debug,Firefox,New Tab Page,andrei.br92,RESOLVED,WONTFIX,2019-06-28 14:29:46
+1525431,defect,Link navigation for cards,Firefox,New Tab Page,andrei.br92,RESOLVED,INVALID,2019-06-28 14:29:46
+1528953,enhancement,Add pref to opt out of recommended features,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:15:17
+1528959,enhancement,Add Pin Tab CFR targeting attributes,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:15:56
+1528966,enhancement,Add new CFR UI template for Pin tab and message schema,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:17:15
+1529334,defect,Blocking/unblocking CFR doesn't clear impressions,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:16:57
+1530359,enhancement,Handle URL redirects for CFR triggers,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:17:16
+1530714,defect,Snippets Not Displaying Unless Browser is Restarted,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1531734,task,Remove pref migration code in FFx69,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:15:25
+1532693,enhancement,Use lightbulb icon for feature recommendation message,Firefox,Theme,andrei.br92,RESOLVED,FIXED,2019-03-19 04:00:56
+1533053,enhancement,Add more automated tests to check switching between feature v.s. addon CFR templates,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:16:26
+1533138,enhancement,Final domain list and targeting for CFR Pin tab message,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:15:16
+1533359,enhancement,Targeting support for any subdomain,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:17:04
+1534719,enhancement,Restrict CFR pin tabs targeting to en-US,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:17:17
+1534934,defect,Investigate multiple CFR triggers being called at the same time,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:16:07
+1535328,task,Update dev dependencies,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1535693,enhancement,Diagnose paint delay,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1536115,enhancement,update babel dev-dependencies,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-07-11 21:00:25
+1536483,enhancement,Review RTL / long and short strings for CFR template,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-06-25 11:16:02
+1537873,defect,"The browser's ""Back"" button is wrongly active on the ""about:preferences#general"" page, if the page is opened from the CFR Pin Tab doorhanger",Firefox,Messaging System,andrei.br92,RESOLVED,WONTFIX,2019-06-25 11:15:04
+1540182,enhancement,Check CFR Message pattern against the trigger pattern,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:15:05
+1541359,task,Chore: Increase our frontend code coverage,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1543109,enhancement,Message schema for CFR FxA Message,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:17:18
+1543116,enhancement,CFR message hub for FxA messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-07-09 10:49:32
+1543125,enhancement,Land strings for FxA message,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-06-25 11:17:27
+1543364,enhancement,Update ASRouterAdmin to handle `Show` for CFR FxA Bookmark Messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-07-09 10:49:41
+1548516,task,Mochitest coverage for FxA Bookmark panel,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:17:03
+1548697,task,Green up our JS dependencies for Firefox 69,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1548784,enhancement,Bookmark Panel message requires variable height,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-07-16 00:23:00
+1550720,enhancement,Expose FxA services targeting attributes for messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-11-14 10:25:02
+1553450,task,Disable asrouter devtoolsEnabled in mochitest environment,Firefox,New Tab Page,andrei.br92,RESOLVED,FIXED,2019-06-28 14:29:46
+1553926,task,Add fetch-options eslint plugin to mozilla central (or merge into the mozilla plugin),Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-06-25 11:14:45
+1557071,task,Enable FxA Bookmark Panel remote settings message on all release channels,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-08-19 08:05:51
+1561374,enhancement,Add final What's New messages for Firefox 70 to the Remote Settings provider,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-09-24 09:33:17
+1561537,enhancement,Add badge/feature-callout style that matches the design spec,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-08-15 07:34:47
+1561547,enhancement,Use Messaging System to badge the FxA accounts toolbar button,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-08-21 03:23:13
+1562166,defect,"The ""CFR FxA Bookmark Panel Message"" is not correctly adjusted on the Firefox ""ru"" locale",Firefox,Messaging System,andrei.br92,RESOLVED,WONTFIX,2019-07-15 12:39:44
+1563733,enhancement,Use Messaging System to badge the What's New toolbar button,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-07-12 07:57:03
+1564290,defect,Intermittent browser/components/newtab/test/browser/browser_onboarding_rtamo.js | Should render .ReturnToAMOOverlay - null == true -,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-02-03 02:09:51
+1569020,enhancement,Add new template for showing Moments pages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-08-15 07:34:46
+1569662,enhancement,CFR: recommend sync when visiting existing bookmark,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-10-31 06:50:19
+1570219,defect,The What's new message icon is missing alternative text,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-08-26 14:58:50
+1570336,task,Startup delay in badging toolbar elements,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-04-10 07:42:19
+1570935,defect,"4.64 - 9.58% tart (linux64-shippable, windows10-64-shippable, windows7-32-shippable) regression on push 70057a7a799382a0ad8e1a3938a4f482ff686d05 (Wed July 31 2019)",Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2022-01-10 05:11:33
+1571022,enhancement,Conditional rendering for CFR feature recommendations,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-09-04 13:20:18
+1571765,defect,Use requestIdleCallback to do badging work at an appropriate time,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-08-16 06:19:27
+1572492,defect,[Protections Panel] Info message background and learn more link aren't correctly placed in RTL,Firefox,Site Identity,andrei.br92,RESOLVED,FIXED,2020-01-09 10:04:35
+1574946,task,Create a new messaging system provider that points to the RS stage bucket with the same name,Firefox,Messaging System,andrei.br92,RESOLVED,INVALID,2019-11-11 07:43:54
+1575884,task,Create a provider for the What's new message bucket,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-08-22 14:59:20
+1575931,enhancement,Add icon asset for Protection Report message,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-08-22 12:55:45
+1577238,defect,Solve dynamic URLs for RS messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2022-06-10 08:49:29
+1577458,defect,Term for Lockwise brand unreplaced in the whatsnew panel,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-08-12 23:52:50
+1577959,defect,Permafailing Tier 2 TEST-UNEXPECTED-FAIL karma | activity-stream:CFRMessageProvider should have a total of 4 messages: expected [ Array(5) ] to have a length of 4 but got 5,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-09-29 23:34:24
+1578385,defect,"The “Dismiss” button from the ""FxA Bookmark Panel Message"" is not visibly selected when focused using the keyboard",Firefox,Messaging System,andrei.br92,RESOLVED,WONTFIX,2021-03-10 03:09:06
+1578771,enhancement,Frequency capping for groups,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-01-13 08:02:22
+1583025,defect,Address bar pushes Hamburger button out of browser after expanding the browser width if whats-new-menu-button is displayed.,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2022-01-10 05:30:01
+1584625,defect,browser_aboutwelcome.js mochitest fails when run twice,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-10-12 20:15:06
+1585686,defect,UnicodeEncodeError: 'ascii' codec can't encode character '\u2716' in position 9: ordinal not in range(128),Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2022-01-10 05:39:31
+1589503,enhancement,Prevent bad remote triggering data from breaking all messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-11-08 13:43:25
+1589653,defect,"The ""BOOKMARK_SYNC_CFR"" recommendation is wrongly triggered when a page is bookmarked",Firefox,Messaging System,andrei.br92,RESOLVED,WONTFIX,2020-06-04 01:08:00
+1589731,task,Update targeting for What's New and Firefox accounts badging,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-11-22 09:35:48
+1590372,defect,"Release Notes link for latest Nightly in ""What's new"" panel points to prod (FF 70) Release Notes",Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-10-23 10:49:26
+1591154,enhancement,Celebration Milestone - Deploy CFR,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-11-11 02:49:11
+1594129,enhancement,Snippet messages should not be evaluated for trigger actions,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-12-17 06:47:32
+1594405,defect,mozjexl causes jank after opening new tabs,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-12-17 06:47:32
+1596118,task,Remove fxa accounts badge that has been replaced by Messaging System badging,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-12-06 13:49:59
+1597246,defect,Enable remote l10n for WNPanel messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-11-22 08:56:56
+1597708,task,Deploy What's New Badge for 72,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-01-07 09:06:02
+1598420,task,Land PiP image asset used in What's New panel message,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-11-22 08:57:04
+1598429,defect,Allow configurable URL parameters in remote messages,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2019-11-21 11:59:23
+1599476,task,Deploy WNPanel message for Mobile in 71,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-12-17 00:39:17
+1599811,defect,Lag/freezing when switching tabs,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2022-03-02 08:35:13
+1602408,task,Increase MS cache validity to 5 minutes,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-12-16 13:53:17
+1602465,defect,Refactor ASRouterTargeting.combineContexts to use Proxy object,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-12-16 13:53:21
+1603483,defect,Disable Tracking Protection messages for possible perf issues,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-01-13 19:26:40
+1604563,enhancement,Rename trackingProtection trigger event,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2019-12-20 13:57:47
+1607410,defect,Re-enable tracking protection messages,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-02-18 03:02:05
+1609070,task,Chrome Switchers Onboarding Experiment in Firefox 73,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-05-04 06:28:46
+1609808,defect,Intermittent browser/components/newtab/test/browser/browser_onboarding_rtamo.js | Should render .ReturnToAMOOverlay - null == true -,Firefox,Messaging System,andrei.br92,RESOLVED,DUPLICATE,2020-02-03 18:48:05
+1609922,defect,Add mochitest for end to end snippets rendering test,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-02-11 01:13:47
+1610298,defect,Preview messages don't belong to a provider,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-02-03 18:11:45
+1612866,task,[meta] Enable remote providers in mochitests,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-05-04 13:46:32
+1612914,task,Enable the topstories provider in mochitests,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-02-28 08:07:25
+1613101,task,Enable the What's New panel provider in mochitests to use Remote Settings data,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-02-17 00:54:07
+1613648,task,Add Topstories content to the newtab responsiveness test,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-02-14 08:30:37
+1615338,task,Land strings for What's New Panel content in Firefox 74,Firefox,Messaging System,andrei.br92,RESOLVED,INVALID,2020-02-17 00:53:44
+1616607,task,Update newtab dependencies and bump node version to 10,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-04-01 21:32:12
+1618281,task,Deploy What's New Badge for 75,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-04-06 07:00:44
+1618356,enhancement,Implement fetching flowparams for sync card entry point from about:welcome simplified UI,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-03-03 14:04:24
+1619381,task,fix tables in Markdown documentation,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2021-03-29 10:54:07
+1619702,task,Improve test coverage for about:welcome,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-03-26 14:26:06
+1619981,defect,Investigate low enrollment rate for Chrome Switchers experiment,Firefox,Messaging System,andrei.br92,RESOLVED,WONTFIX,2020-03-30 14:54:29
+1621402,enhancement,Add telemetry to capture failures to read attribution data,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2022-02-09 19:24:18
+1624309,enhancement,Add persistent storage for ExperimentStore,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-04-22 12:18:12
+1626953,task,Deploy heartbeat message in 75,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-11-02 09:53:15
+1628364,task,Deploy messages WNPanel messages for 76,Firefox,Messaging System,andrei.br92,RESOLVED,FIXED,2020-07-08 07:38:11
+1628688,enhancement,Update ASRouter to handle entrypoint parameters from snippets,Firefox,about:logins,andrei.br92,RESOLVED,FIXED,2020-05-19 04:48:53
+1549543,defect,Make search initialization failure more obvious,Firefox,Search,andrew.swan,RESOLVED,FIXED,2019-05-07 20:47:03
+1299251,defect,"Increase arewee10syet to include all add-ons with more than 2,000 active users",Firefox,Extension Compatibility,andy+bugzilla,RESOLVED,FIXED,2016-09-02 13:47:44
+317833,defect,Personal Toolbar,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 06:05:21
+317834,defect,Bookmarks Menu,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 05:22:34
+318050,defect,Dragging into the middle of a folder button on the toolbar should drop into folder,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 06:11:39
+320453,defect,Set custom titles when creating bookmarks,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 06:56:38
+320559,defect,Bookmarks containers need to be able to specify icons,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 06:39:24
+325169,defect,Feed folder icons,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 05:52:00
+327036,defect,OS Bookmarks menu nonfunctional,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 05:51:33
+327209,defect,Assertion when removing an item from places toolbar,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 06:10:27
+327543,defect,Live bookmark icon not displayed in places toolbar (livemarkItem.png corrupt),Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 06:11:11
+328299,defect,Opening customize window makes bookmarks toolbar items disappear until the next restart,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 05:49:17
+329179,defect,Places Search Popup,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 07:20:52
+329180,defect,Places Popup,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 07:16:51
+329892,defect,Places Toolbar doesn't redraw when adding or removing items,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,FIXED,2009-11-26 06:23:13
+331123,defect,no bookmarks in menu when no windows are open on Mac OS X,Firefox,Bookmarks & History,annie.sullivan,RESOLVED,DUPLICATE,2009-11-26 06:25:26
+1592829,task,Make browser_privatebrowsing_context_and_chromeFlags.js Fission compatible,Firefox,Private Browsing,annygakhokidze,RESOLVED,FIXED,2019-11-15 14:34:42
+1420574,enhancement,Clarify that browser_oneOffHeader.js fails if screen resolution is small,Firefox,Search,arai.unmht,RESOLVED,FIXED,2018-05-09 02:37:06
+1424595,enhancement,Ignore Promise rejection for denied access in browser/base/content/test/permissions/browser_temporary_permissions_expiry.js,Firefox,Site Identity,arai.unmht,RESOLVED,FIXED,2019-03-31 02:13:00
+1478792,enhancement,Temporarily disable failing tests due to process flip: browser_aboutHome_search_composing.js and browser_aboutHome_search_telemetry.js,Firefox,New Tab Page,arai.unmht,RESOLVED,FIXED,2019-06-28 14:29:46
+1608279,task,[meta] Stop calling XPCOMUtils.defineLazyGetter on the global `this` in JSMs,Firefox,General,arai.unmht,RESOLVED,FIXED,2022-08-03 05:56:36
+1485195,defect,Schema displayed in the Bookmarks policy documentation is incomplete,Firefox,Enterprise Policies,arshadkazmi42,RESOLVED,FIXED,2018-10-31 20:09:37
+1495081,defect,Content Blocking on/off switch's tooltip not shown,Firefox,Settings UI,aryx.bugmail,RESOLVED,FIXED,2018-11-23 11:21:50
+1535666,defect,"Perma browser/base/content/test/about/browser_aboutCertError_noSubjectAltName.js | That message should appear - Got false, expected true when Gecko 67 merges to Beta on 2019-03-15",Firefox,General,aryx.bugmail,RESOLVED,FIXED,2019-03-24 23:08:13
+1624868,defect,Perma linux ccov TEST-UNEXPECTED-TIMEOUT | automation.py | application timed out after 370 seconds with no output  [browser/base/content/test/performance/io],Firefox,General,aryx.bugmail,RESOLVED,FIXED,2020-09-30 16:15:28
+233712,defect,No drag-and-drop for dock icon (Other than html),Firefox,General,asaf,RESOLVED,FIXED,2005-11-14 10:22:35
+239218,defect,"Menus are nonfunctional when 'tools' have focus (Downloads / Extensions / Theme Managers,  JavaScript Console and Page Info window)",Firefox,Menus,asaf,RESOLVED,FIXED,2010-05-14 13:18:01
+263146,defect,"use the Cmd key instead of the Ctrl key on Mac (""accel"" instead of ""control"")",Firefox,Keyboard Navigation,asaf,RESOLVED,FIXED,2006-05-22 11:50:38
+267227,defect,"be able to use Window (mac only) and Help (all) menus for every window (view source, bookmarks manager, etc.) with menus",Firefox,Shell Integration,asaf,RESOLVED,FIXED,2006-11-09 14:24:24
+285574,defect,[Mac] fonts settings dialog is cropped,Firefox,Settings UI,asaf,RESOLVED,FIXED,2006-08-27 06:13:48
+287615,defect,move openPreferences() to utilityOverlay,Firefox,Settings UI,asaf,RESOLVED,FIXED,2006-08-27 06:13:59
+287924,defect,Bookmarks > Manage Bookmarks > Move does not work,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2012-02-03 12:52:56
+290714,defect,Don't use reserved const names in bookmarks/content,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2006-08-27 05:01:05
+293810,defect,Lots of cmd+shift combinations opens Help viewer,Firefox,Keyboard Navigation,asaf,RESOLVED,FIXED,2005-05-14 01:13:45
+295337,defect,Cmd+? doens't open help successfully,Firefox,Menus,asaf,RESOLVED,FIXED,2005-05-26 17:37:46
+306208,defect,regression: tabbar is visible in popups,Firefox,Tabbed Browser,asaf,RESOLVED,FIXED,2006-03-12 18:51:55
+309015,defect,"Options - Privacy - History , 0 days is not displayed (""ask me what to do"" radio buttons not checked when opening pref window)",Firefox,Settings UI,asaf,RESOLVED,FIXED,2006-03-12 18:55:37
+310007,defect,No RSS UI after adding back the location bar (until a new window is created),Firefox,Address Bar,asaf,RESOLVED,FIXED,2005-09-26 15:40:58
+310373,defect,"Dragging & Dropping a link on the ""New Window""/""New Tab"" buttons can load priviliged xul",Firefox,Security,asaf,RESOLVED,FIXED,2007-04-01 15:22:30
+335077,defect,Middle click on back button does not work.,Firefox,Toolbars and Customization,asaf,RESOLVED,FIXED,2006-04-24 07:13:29
+343585,defect,tab scrolling:  scenario where open link in background doesn't enable the scroll button,Firefox,Tabbed Browser,asaf,RESOLVED,FIXED,2006-11-12 10:53:35
+345259,defect,[RTL UI] opening a tab in background moves tabs if the tabstrip overflows,Firefox,Tabbed Browser,asaf,RESOLVED,FIXED,2008-04-07 14:01:05
+347797,defect,[Mac] Tabs aligned to the left when they should be centered,Firefox,General,asaf,RESOLVED,FIXED,2006-08-14 14:17:48
+348607,defect,locale.dir=rtl does not affect all UI elements in branch builds,Firefox,Toolbars and Customization,asaf,RESOLVED,FIXED,2008-04-07 14:01:06
+348759,defect,[Mac] Shadow missing around favicon in location bar,Firefox,General,asaf,RESOLVED,FIXED,2006-09-13 13:00:55
+348947,defect,"When customizing toolbars, search box textfield still has I-beam cursor and is cannot be dragged",Firefox,Toolbars and Customization,asaf,RESOLVED,DUPLICATE,2006-08-17 10:39:39
+348959,defect,[Winstripe] tabbrowser-tabs lost their focus feedback,Firefox,Toolbars and Customization,asaf,RESOLVED,FIXED,2006-08-18 23:46:29
+349079,defect,Fix back & forward buttons issues in Pinstripe,Firefox,General,asaf,RESOLVED,FIXED,2006-08-18 23:47:36
+349148,defect,"Clicking Back / Forward button label opens dropdown instead of going back in ""Icons and Text"" mode",Firefox,Toolbars and Customization,asaf,RESOLVED,FIXED,2006-08-25 08:43:33
+350590,defect,Left Click on Back and Forward brings up dropdown,Firefox,Toolbars and Customization,asaf,RESOLVED,FIXED,2006-09-03 15:11:10
+351363,defect,overlays to customizeToolbar.xul should also apply to the sheet implementaion,Firefox,Toolbars and Customization,asaf,RESOLVED,FIXED,2006-12-10 23:54:29
+371675,defect,Error when dropping a url on the bookmarks toolbar,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2009-11-26 05:35:26
+372040,defect,nodeIsLivemarkItem asserts for separators,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2009-11-26 06:33:06
+379211,defect,Use item IDs for annotating bookmark/folder items rather than place: URIs,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2009-11-26 07:35:39
+384936,defect,Folders in bookmarks menu are inaccessible after moving a bookmark to/in the menu,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2009-11-26 05:19:09
+388337,defect,Pasting a folder which contains sub-folders fails,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2009-11-26 06:00:09
+456048,defect,Use the new D&D API in tabbrowser,Firefox,Tabbed Browser,asaf,RESOLVED,FIXED,2010-12-17 06:56:46
+528006,defect,"ASSERT: parent node must have _DOMElement set,When I carry out undoing of the bookmark",Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2010-12-17 06:56:45
+575254,defect,Reduce TabBrowser XBL usage to minimum,Firefox,Tabbed Browser,asaf,RESOLVED,DUPLICATE,2017-08-29 16:05:27
+575258,defect,Decouple the tabbrowser binding from its implementation,Firefox,Tabbed Browser,asaf,RESOLVED,WONTFIX,2017-08-29 15:58:16
+710259,defect,New Safari migrator (OS X & Windows),Firefox,Migration,asaf,RESOLVED,FIXED,2022-11-03 01:24:11
+715099,defect,Convert nsProfileMigrator to JS so we can use JS modules on migration,Firefox,Migration,asaf,RESOLVED,FIXED,2012-03-25 06:02:50
+822343,defect,Improve downloads view rendering time,Firefox,Bookmarks & History,asaf,RESOLVED,FIXED,2013-02-05 23:31:17
+826991,defect,Store download state and end time in an annotation (avoid I/O for new history downloads),Firefox,Downloads Panel,asaf,RESOLVED,FIXED,2016-08-26 09:07:20
+828111,defect,Workaround multiple reflows issue and slow xbl attachment in the downloads view,Firefox,Downloads Panel,asaf,RESOLVED,FIXED,2013-01-13 09:31:54
+1570292,defect,Inconsistencies with visual cue used for remote controlled browser session,Firefox,Address Bar,ato,RESOLVED,FIXED,2019-07-31 14:58:13
+1570327,defect,Hide robot icon when the address bar is in edit mode,Firefox,Address Bar,ato,RESOLVED,FIXED,2019-08-01 14:46:59
+591398,defect,Use three-finger gesture swipe to enter/exit Tab Candy,Firefox,General,azaaza,RESOLVED,FIXED,2013-11-12 00:57:10
+1251545,defect,[e10s release criteria] Slow script warning count should not regress,Firefox,General,azhang,RESOLVED,FIXED,2016-07-14 18:55:03
+1190506,defect,[UX] Design final visuals for url bar states for control center and permissions icons,Firefox,General,bbell,RESOLVED,FIXED,2016-05-10 09:11:34
+1192625,defect,[UX] New visual design for the updated about:privatebrowsing page,Firefox,Private Browsing,bbell,RESOLVED,FIXED,2016-10-06 16:28:59
+1200624,defect,[UX] Provide final assets and spec for URL bar states in Control Center 2,Firefox,General,bbell,RESOLVED,FIXED,2016-05-10 09:13:02
+1200626,defect,[UX] Provide final assets and spec for permissions notification design,Firefox,General,bbell,RESOLVED,FIXED,2016-05-10 09:14:13
+1200630,defect,[UX] Provide final assets and spec for in use permissions on tab bar,Firefox,General,bbell,RESOLVED,FIXED,2016-05-10 09:13:15
+1200631,defect,[UX] Provide final assets and spec for permissions panel of control center,Firefox,General,bbell,RESOLVED,FIXED,2016-05-10 09:12:07
+1217442,defect,[UX] Modify design of site name for when it breaks width of control center panel,Firefox,General,bbell,RESOLVED,FIXED,2016-05-10 09:11:46
+1353362,enhancement,[ux] Provide design spec for redesigned panel subviews,Firefox,Toolbars and Customization,bbell,RESOLVED,FIXED,2017-04-24 14:10:15
+1354470,enhancement,[UX] Don't make the old Library window the most prominent item in the new Library panel,Firefox,Bookmarks & History,bbell,RESOLVED,FIXED,2017-05-16 18:41:24
+1355021,enhancement,[UX] Update hamburger panel design to include notification areas,Firefox,Toolbars and Customization,bbell,RESOLVED,FIXED,2017-04-24 16:25:54
+1359625,enhancement,[UX] Provide detailed UX specs for edit and zoom controls in the new hamburger panel,Firefox,Toolbars and Customization,bbell,RESOLVED,FIXED,2017-05-16 14:45:39
+1360055,enhancement,"[UX] Need spec for the page-action menu's ""Send to Device"" submenu/subview/subpanel",Firefox,Address Bar,bbell,RESOLVED,FIXED,2017-05-17 12:31:54
+1461922,enhancement,[ux] Design spec for privacy panel work,Firefox,Site Identity,bbell,RESOLVED,FIXED,2018-05-23 15:56:08
+802050,defect,Assertions [Overwriting an existing document channel!] when opening pdf files,Firefox,PDF Viewer,bdahl,RESOLVED,FIXED,2013-02-14 11:42:48
+806329,defect,Restore MPL 2 headers removed by recent pdf.js update,Firefox,PDF Viewer,bdahl,RESOLVED,FIXED,2012-11-13 06:34:51
+1399956,enhancement,Run plain mochitests in Headless Mode on Linux,Firefox,Headless,bdahl,RESOLVED,FIXED,2017-10-17 12:08:24
+1408220,enhancement,Run plain mochitests in Headless Mode on Windows,Firefox,Headless,bdahl,RESOLVED,FIXED,2017-10-20 02:54:07
+1409580,enhancement,Run plain mochitests in Headless Mode on MacOS,Firefox,Headless,bdahl,RESOLVED,FIXED,2019-06-12 01:15:38
+1442829,enhancement,Remove macBrowserOverlay.xul,Firefox,Menus,bdahl,RESOLVED,FIXED,2018-03-19 15:46:49
+1444228,enhancement,Remove editBookmarkOverlay.xul,Firefox,Bookmarks & History,bdahl,RESOLVED,FIXED,2018-03-17 03:32:32
+1486888,enhancement,"Either expose <xul:command> / [command] attribute broadcasting to chrome HTML documents, or stop using it in browser.xul",Firefox,General,bdahl,RESOLVED,FIXED,2019-10-31 10:20:37
+1543245,defect,Use prototype document content sink for all chrome privileged XHTML,Firefox,General,bdahl,RESOLVED,FIXED,2019-04-20 11:51:15
+1562025,defect,Headless window sizing broken when running under web driver,Firefox,Headless,bdahl,RESOLVED,FIXED,2019-07-02 22:58:41
+1566882,enhancement,Enable PDF viewer telemetry on release,Firefox,PDF Viewer,bdahl,RESOLVED,FIXED,2020-09-23 18:56:46
+1462725,enhancement,"Add SavantShieldStudy.jsm and ""savant"" event telemetry category",Firefox,General,bdanforth,RESOLVED,FIXED,2018-07-03 09:28:37
+1465694,enhancement,Add tab event telemetry for Savant Shield study,Firefox,Tabbed Browser,bdanforth,RESOLVED,FIXED,2018-07-12 04:44:01
+1465697,enhancement,"Add library_open, hamburger_open and dotdotdot_open event telemetry for Savant Shield study",Firefox,General,bdanforth,RESOLVED,FIXED,2018-06-09 17:59:18
+1465698,defect,Add readermode event telemetry for Savant Shield study,Firefox,General,bdanforth,RESOLVED,FIXED,2018-06-09 17:59:19
+1465703,enhancement,Add bookmark and follow_bookmark event telemetry for Savant Shield study,Firefox,General,bdanforth,RESOLVED,FIXED,2018-06-09 17:59:21
+1465704,enhancement,Add follow_urlbar_link event telemetry for Savant Shield study,Firefox,General,bdanforth,RESOLVED,FIXED,2018-06-09 17:59:22
+1465707,enhancement,Add addon event telemetry for Savant Shield study,Firefox,General,bdanforth,RESOLVED,FIXED,2018-06-09 17:59:25
+239929,defect,Semi-Single-Profile for firefox and the new-toolkit apps,Firefox,Migration,benjamin,RESOLVED,FIXED,2007-07-30 22:08:39
+304987,defect,L10N installer creates shortcuts with $ProductName$ name,Firefox,Installer,benjamin,RESOLVED,FIXED,2008-05-14 02:42:19
+306304,defect,"If bookmarks.bak is missing , all bookmarks are overwritten by the default bookmarks",Firefox,Bookmarks & History,benjamin,RESOLVED,FIXED,2006-03-12 18:52:03
+327196,defect,Build with --enable-places by default,Firefox,Bookmarks & History,benjamin,RESOLVED,DUPLICATE,2009-11-26 07:26:24
+335605,defect,"Hook up ""Download Dictionaries"" context menu",Firefox,General,benjamin,RESOLVED,FIXED,2006-08-04 05:31:06
+339714,defect,Locale repackaging to support the NSIS installer,Firefox,Installer,benjamin,RESOLVED,FIXED,2006-07-03 08:07:56
+352592,defect,moz:distributionID should not be hardcoded into nsSearchService.js,Firefox,Search,benjamin,RESOLVED,FIXED,2006-09-14 21:13:34
+371309,defect,Migration Wizard explicitly sets a homepage which is wrong when using a distribution,Firefox,Migration,benjamin,RESOLVED,FIXED,2007-04-29 08:54:24
+1251376,defect,"[e10s release criteria] Stability, crash rates should not regress",Firefox,General,benjamin,RESOLVED,FIXED,2016-07-14 18:55:47
+412862,defect,Change the 'allow scripts to move or resize existing windows' pref to a whitelist,Firefox,Settings UI,bent.mozilla,RESOLVED,WONTFIX,2017-11-29 01:40:02
+1095824,defect,[Developer Edition] background image of about dialog not wide enough,Firefox,Theme,bgrinstead,RESOLVED,FIXED,2015-07-24 22:43:52
+1175266,defect,browser_trackingUI.js fails when running locally,Firefox,General,bgrinstead,RESOLVED,FIXED,2016-05-10 09:11:48
+1175549,defect,Refactor the tracking protection mochitest-browser test,Firefox,General,bgrinstead,RESOLVED,FIXED,2016-05-10 09:12:01
+1182333,defect,Add tag for tracking protection tests,Firefox,General,bgrinstead,RESOLVED,FIXED,2016-05-10 09:12:49
+1185117,defect,Investigate - TP shield shows up incorrectly when pressing back while loading a page with tracking elements,Firefox,Address Bar,bgrinstead,RESOLVED,FIXED,2016-05-10 09:12:53
+1186925,defect,Rewrite existing tests using the old TP/MCB shield,Firefox,Address Bar,bgrinstead,RESOLVED,FIXED,2016-05-10 09:11:28
+1189928,defect,Disable telemetry measurements for Tracking Protection in PB mode,Firefox,General,bgrinstead,RESOLVED,FIXED,2016-05-10 09:12:31
+1191935,defect,Final strings for PBM for Tracking Protection,Firefox,Private Browsing,bgrinstead,RESOLVED,FIXED,2016-05-10 09:11:36
+1192482,defect,Update accesskeys for PBM for Tracking Protection,Firefox,Private Browsing,bgrinstead,RESOLVED,FIXED,2016-05-10 09:14:12
+1192576,defect,Need to update string entity name for trackingProtection.startTour,Firefox,Private Browsing,bgrinstead,RESOLVED,FIXED,2016-05-10 09:14:05
+1193158,enhancement,Create a basic Site Permissions subview,Firefox,Address Bar,bgrinstead,RESOLVED,FIXED,2016-05-10 09:13:22
+1199790,defect,Add sections and sorting for permissions in subpanel to match designs,Firefox,Address Bar,bgrinstead,RESOLVED,FIXED,2016-05-10 09:13:48
+1202084,defect,Breakdown - CC: Site Permissions on main panel,Firefox,General,bgrinstead,RESOLVED,FIXED,2016-05-10 09:14:18
+1212456,defect,Merge platform-specific aboutCertError.css files into a single shared file,Firefox,General,bgrinstead,RESOLVED,FIXED,2016-05-10 09:12:58
+1365638,defect,"Change label text for ""Close sidebar"" to ""Close Sidebar"" on header menu",Firefox,Menus,bgrinstead,RESOLVED,FIXED,2017-06-23 09:23:01
+1367767,defect,"Uppercase ""Move Sidebar To Left/Right"" strings",Firefox,General,bgrinstead,RESOLVED,FIXED,2017-06-28 07:48:14
+1377551,enhancement,Only change the background image for the flipped sidebar toolbar button state,Firefox,General,bgrinstead,RESOLVED,FIXED,2017-10-18 15:03:20
+1409784,enhancement,Remove mStringBundle from tabbrowser binding and use gNavigatorBundle instead,Firefox,Tabbed Browser,bgrinstead,RESOLVED,FIXED,2021-11-29 03:06:12
+1448215,task,Remove offlineapp binding,Firefox,Settings UI,bgrinstead,RESOLVED,FIXED,2019-06-05 04:38:37
+1460977,task,Load searchbar stylesheets in browser.xul instead of with XBL <resources>,Firefox,Search,bgrinstead,RESOLVED,FIXED,2019-06-05 05:00:57
+1460982,task,Convert <searchbar> to a Custom Element,Firefox,Search,bgrinstead,RESOLVED,FIXED,2019-06-05 04:41:30
+1473160,enhancement,Set up nonBrowserWindowStartup / nonBrowserWindowDelayedStartup / nonBrowserWindowShutdown somewhere outside of browser.js,Firefox,General,bgrinstead,RESOLVED,FIXED,2024-02-19 13:58:05
+1479538,enhancement,"Rewrite callers of document.createElementNS(XUL_NS, ...) to use document.createXULElement(...)",Firefox,General,bgrinstead,RESOLVED,FIXED,2020-04-20 07:13:26
+1482448,defect,Titlebar doesn't get collapsed on OSX when running in browser.xhtml due to MozBeforeInitialXULLayout not firing,Firefox,General,bgrinstead,RESOLVED,FIXED,2018-10-10 11:43:37
+1488938,enhancement,Rewrite callers of firstChild/lastChild/childNodes/previousSibling/nextSibling with firstElementChild/lastElementChild/children/previousElementSibling/nextElementSibling round 2,Firefox,General,bgrinstead,RESOLVED,FIXED,2018-09-07 15:09:17
+1496137,defect,Can't create new container with preoccupied color,Firefox,Settings UI,bgrinstead,RESOLVED,FIXED,2023-07-24 09:50:10
+1507045,task,Remove the customizable ui toolbar binding,Firefox,Toolbars and Customization,bgrinstead,RESOLVED,FIXED,2019-06-05 04:38:49
+1519461,defect,Can't switch tabs in a given profile with `browser.tabs.remote.logSwitchTiming=true`: AsyncTabSwitcher.logState is throwing in the call to linkedBrowser.docShellIsActive,Firefox,Tabbed Browser,bgrinstead,RESOLVED,FIXED,2019-02-14 00:48:04
+1539665,task,Handle the tabbrowser-arrowscrollbox XBL logic from within tabbrowser-tabs,Firefox,Tabbed Browser,bgrinstead,RESOLVED,FIXED,2019-06-05 05:00:11
+1545962,task,Use <template> instead of CDATA in about:preferences,Firefox,Settings UI,bgrinstead,RESOLVED,FIXED,2019-04-24 08:58:02
+1546024,defect,"Chrome custom element attribute inheritance has stale cache after element recreates inner DOM and calls initializeAttributeInheritance again (was: ""Recommended by Pocket"" label and icon are missing, in Firefox Home Content section of Preferences)",Firefox,New Tab Page,bgrinstead,RESOLVED,FIXED,2022-01-10 04:38:21
+1553188,task,Rename browser.xul to browser.xhtml,Firefox,General,bgrinstead,RESOLVED,FIXED,2019-06-13 07:10:07
+1553387,defect,'Window' menu mostly empty (missing the list of windows) since switching to browser.xhtml,Firefox,General,bgrinstead,RESOLVED,FIXED,2019-05-23 14:55:21
+1558995,task,Remove #content-deck,Firefox,Tabbed Browser,bgrinstead,RESOLVED,FIXED,2020-10-16 16:28:25
+1580978,task,Migrate the notification-popup-box element to ftl,Firefox,Site Identity,bgrinstead,RESOLVED,FIXED,2019-09-13 14:48:49
+1590554,enhancement,Improve caching of tabbrowser-tab fragment,Firefox,Tabbed Browser,bgrinstead,RESOLVED,FIXED,2019-11-01 06:16:19
+1592054,defect,There's a brief flash of unstyled tab content (especially noticeable in debug builds during tests),Firefox,Tabbed Browser,bgrinstead,RESOLVED,FIXED,2019-11-05 02:05:22
+1060046,defect,e10s EventTarget shim is broken,Firefox,Extension Compatibility,bill.mccloskey,RESOLVED,FIXED,2018-03-29 13:00:54
+1164931,defect,The e10s slow script notification bar keeps spontaneously disappearing and reappearing in cycles.,Firefox,General,bill.mccloskey,RESOLVED,FIXED,2016-11-10 10:23:16
+1249978,defect,[e10s] SLOW_SCRIPT_NOTICE_COUNT regressed in beta experiment,Firefox,General,bill.mccloskey,RESOLVED,INVALID,2016-03-30 08:29:36
+515260,defect,[Taskfox] Stop the return key from submitting a blank search,Firefox,Address Bar,blair,RESOLVED,FIXED,2009-10-14 16:24:43
+935815,defect,UITour: Allow adding a button with an action to the info panel,Firefox,General,blair,RESOLVED,FIXED,2014-01-15 11:34:33
+1138738,defect,Pre-land strings for in-product tour pieces for ReadingList v1,Firefox,Tours,blair,RESOLVED,FIXED,2015-03-11 19:34:20
+1574197,task,Add SUMO content for new Skyline in-product links,Firefox,Protections UI,bmikel,RESOLVED,FIXED,2019-09-30 02:25:15
+1572174,task,Define engagement success for the search nudges add-on experiment,Firefox,Address Bar,bmiroglio,RESOLVED,DUPLICATE,2019-08-22 13:22:05
+1437335,defect,Manual proxy port configuration should disable when its option is not selected,Firefox,Settings UI,bob.silverberg,RESOLVED,FIXED,2018-03-01 09:51:15
+1607630,defect,pdf.js occasionally shows incorrect symbols until page is refreshed,Firefox,PDF Viewer,bobowencode,RESOLVED,FIXED,2020-05-20 05:25:15
+1177494,defect,[UX] Design icon to signal when active mixed content blocking is disabled,Firefox,General,bram,RESOLVED,FIXED,2016-05-10 09:13:46
+317827,defect,History Views do not update automatically,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:59:56
+318057,defect,bookmarks.html exporter,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:53:39
+319228,defect,Need custom title for bookmarks,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:00:12
+320181,defect,Reduce autocomplete search,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:14:22
+325153,defect,Update duplicate collapsing when history items are deleted,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:27:28
+325161,defect,support URI property on all result nodes,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:25:08
+325173,defect,Places DB changes should not break existing databases,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:21:07
+325665,defect,Coalesce redirects in history,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:31:01
+326432,defect,Bookmarks batches should also be DB transactions,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:04:05
+327160,defect,SpellCheck dictionary distribution strategy,Firefox,Installer,brettw,RESOLVED,INVALID,2006-06-27 19:10:15
+327367,defect,Some favicons are mis-sized,Firefox,Bookmarks & History,brettw,RESOLVED,DUPLICATE,2009-11-26 05:56:02
+327491,defect,bookmarks_history.sqlite is way bigger than history.dat,Firefox,Bookmarks & History,brettw,RESOLVED,WONTFIX,2009-11-26 07:14:48
+327841,defect,Re-implement a failed favicon cache in the favicon service,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:49:42
+328470,defect,Large number of days for history to be remembered causes history to be cleared,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 07:06:41
+328532,defect,Normalize annotation names in database,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:39:07
+329524,defect,nsNavBookmarks::ReplaceItem() leaves the bookmark hash in an inconsistent state,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:48:37
+329546,defect,Separate out the view model from a nsNavHistoryResult,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:32:41
+329563,defect,Document annotations getting deleted with history behavior,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 07:22:48
+329668,defect,Land spellchecking on 1_8_BRANCH,Firefox,General,brettw,RESOLVED,FIXED,2006-05-03 22:31:25
+329691,defect,Failure creating bookmarks service,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:29:52
+329698,defect,Write nsIAnnotationService::getAnnotations,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 07:02:13
+329819,defect,Runtime performance is worse for places,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:37:17
+330332,defect,Recognizable history in bookmarks_history.sqlite after being deleted,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 06:00:13
+330359,defect,Host grouping doesn't get updated for visit dates,Firefox,Bookmarks & History,brettw,RESOLVED,DUPLICATE,2009-11-26 07:21:21
+332934,defect,extremely slow startup as bookmarks_history.sqlite file grows,Firefox,Bookmarks & History,brettw,RESOLVED,FIXED,2009-11-26 05:49:21
+335306,defect,Turn inline spellchecking on by default,Firefox,General,brettw,RESOLVED,FIXED,2006-06-11 11:32:02
+335600,defect,Give spellchecking dictionaries reasonable names in the UI,Firefox,General,brettw,RESOLVED,FIXED,2006-05-16 13:40:23
+337368,defect,Spelling suggestions don't appear when context menu is accessed from keyboard,Firefox,General,brettw,RESOLVED,FIXED,2008-05-11 13:32:51
+337871,defect,Screen jumps (scrolls) around while entering text into page with multiple textboxes,Firefox,General,brettw,RESOLVED,FIXED,2006-06-26 15:45:38
+338999,defect,Firefox 2 spell check tracking bug,Firefox,General,brettw,RESOLVED,FIXED,2006-11-30 09:15:17
+254056,defect,focus lost when closing tab,Firefox,Tabbed Browser,bryner,RESOLVED,FIXED,2019-05-03 14:53:37
+317826,defect,Bookmarks Views do not update dynamically,Firefox,Bookmarks & History,bryner,RESOLVED,FIXED,2009-11-26 05:18:58
+322369,defect,History importer,Firefox,Bookmarks & History,bryner,RESOLVED,FIXED,2009-11-26 07:24:47
+325171,defect,Initial startup time is teh sux0rs.,Firefox,Bookmarks & History,bryner,RESOLVED,FIXED,2009-11-26 06:31:06
+325176,defect,Ensure Places Migrates Correctly,Firefox,Bookmarks & History,bryner,RESOLVED,INVALID,2009-11-26 05:52:08
+325285,defect,Support multiple instances of the same URI in a single folder,Firefox,Bookmarks & History,bryner,RESOLVED,WONTFIX,2009-11-26 07:14:43
+203102,defect,Investigate/port patches for url field (location/address bar) tab problems,Firefox,General,bugs,RESOLVED,FIXED,2006-03-12 17:10:22
+210553,defect,"Problems launching external links from other applications when Firebird is default browser, XML parsing error (Error ""No XBL binding for browser"" appears when trying to launch from Eudora, snak, etc.)",Firefox,General,bugs,RESOLVED,FIXED,2004-10-01 19:30:40
+216474,defect,Browser Crashes in Password Manager,Firefox,General,bugs,RESOLVED,FIXED,2003-08-17 14:07:21
+217410,defect,Bump skin version?,Firefox,General,bugs,RESOLVED,INVALID,2005-04-20 12:35:15
+236056,defect,pop up XPInstall dialog when user is about to click,Firefox,General,bugs,RESOLVED,FIXED,2004-10-26 17:06:16
+244791,defect,Update Version Number to 0.9 on branch,Firefox,General,bugs,RESOLVED,FIXED,2004-09-06 03:27:08
+252679,defect,Need EULA for Firefox,Firefox,General,bugs,RESOLVED,FIXED,2006-03-12 17:47:26
+257047,defect,"Update all user-facing version strings to ""1.0 Preview Release""",Firefox,General,bugs,RESOLVED,FIXED,2006-03-12 17:54:55
+274712,defect,New Options Dialog,Firefox,Settings UI,bugs,RESOLVED,FIXED,2009-07-11 19:07:39
+318827,defect,Can drag magical entries in the places view list box into bookmarks menu,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 07:22:20
+320286,defect,Undo/Redo menu items and keybindings for places,Firefox,Bookmarks & History,bugs,RESOLVED,DUPLICATE,2009-11-26 06:57:54
+324958,defect,Folder undo delete back to previous folder ID,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 05:22:29
+326346,defect,JS error when selecting text on page,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 06:06:36
+326614,defect,Resolve day picking UI issues,Firefox,Bookmarks & History,bugs,RESOLVED,INVALID,2009-11-26 05:54:36
+327223,defect,Ensure Sidebar Framework still exists in MOZ_PLACES builds,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 06:36:36
+327400,defect,Issues with Places UI buttons,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 05:47:49
+328243,defect,disband the browser shim,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 05:57:09
+329314,defect,"Pressing Ctrl+Z in Places Results in an Invalid Transaction Index Error, but last action is undone",Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 06:57:39
+329488,defect,"Can't paste if no bookmark selected( [Exception... ""Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsITreeView.isContainer]"" )",Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 07:22:36
+329535,defect,Branch does not build with VC6,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 06:24:21
+329587,defect,Places controller claims to support all commands,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 05:40:18
+329657,defect,places trademarks-relevant files should be in content,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 05:42:40
+330024,defect,New Folder button in Places doesn't work until an item in the right pane is selected,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 06:13:16
+330031,defect,Refusal to delete bookmarks folder with separators in it,Firefox,Bookmarks & History,bugs,RESOLVED,DUPLICATE,2009-11-26 06:56:24
+330143,defect,New Folder button should always create a new folder,Firefox,Bookmarks & History,bugs,RESOLVED,DUPLICATE,2009-11-26 05:21:05
+330148,defect,"Places window misses shortcut key ""close"" functionality",Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 06:51:43
+330926,defect,Error: PlacesOrganizer._places has no properties,Firefox,Bookmarks & History,bugs,RESOLVED,WORKSFORME,2009-11-26 07:00:00
+331523,defect,Places crashes after creating new separator,Firefox,Bookmarks & History,bugs,RESOLVED,FIXED,2009-11-26 06:26:46
+191524,defect,Options Dialog UI,Firefox,Settings UI,bugzilla,RESOLVED,DUPLICATE,2006-08-27 05:25:46
+231054,defect,Privacy Options Reorganization,Firefox,Settings UI,bugzilla,RESOLVED,DUPLICATE,2006-08-27 05:30:30
+806460,defect,NS_ERROR_ILLEGAL_VALUE in nsINavBookmarksService.insertBookmark while inserting query,Firefox,Sync,bugzilla,RESOLVED,FIXED,2018-09-24 14:24:50
+883595,defect,Extend Sync error bar duration,Firefox,Sync,bugzilla,RESOLVED,FIXED,2018-09-24 14:24:50
+970084,defect,Update object format docs for Sync 1.5,Firefox,Sync,bugzilla,RESOLVED,FIXED,2018-09-24 14:26:19
+1460426,enhancement,Add PROCESS_MITIGATION_IMAGE_LOAD_POLICY to bootstrap process,Firefox,General,bugzilla,RESOLVED,FIXED,2018-05-10 09:49:13
+1460433,enhancement,Implement failure logging for bootstrap process,Firefox,General,bugzilla,RESOLVED,FIXED,2019-03-06 12:18:33
+1460995,enhancement,Bootstrap process: CreateProcess call failing on Windows 7,Firefox,General,bugzilla,RESOLVED,FIXED,2018-05-13 15:04:12
+1460996,defect,Bootstrap process should always convert argv[0] to absolute path,Firefox,General,bugzilla,RESOLVED,FIXED,2018-07-11 05:09:02
+1462187,enhancement,Bootstrap process using incorrect version for PreferSystem32 mitigation policy,Firefox,General,bugzilla,RESOLVED,FIXED,2018-05-17 08:36:11
+1475067,enhancement,Bootstrap process: Faster processing of UNICODE_STRINGs in blocklist,Firefox,General,bugzilla,RESOLVED,FIXED,2018-07-12 14:58:21
+1477790,enhancement,Add the ability for firefox.exe to use the launcher process by default,Firefox,General,bugzilla,RESOLVED,FIXED,2019-08-29 08:25:15
+1479057,enhancement,Launcher process: Improved sanity checks in nt::PEHeaders,Firefox,General,bugzilla,RESOLVED,FIXED,2018-08-09 03:16:54
+1481635,enhancement,Launcher process improvements for automation and UAC-disabled configurations,Firefox,General,bugzilla,RESOLVED,FIXED,2018-08-14 11:18:57
+1481958,enhancement,Add binary version checking to TestNativeNt,Firefox,General,bugzilla,RESOLVED,FIXED,2018-08-11 06:19:09
+1482219,enhancement,Fix clang-cl warnings in NativeNt.h,Firefox,General,bugzilla,RESOLVED,FIXED,2018-08-11 06:19:17
+1486901,enhancement,Browser restarts should use launcher process when --enable-launcher-process is set,Firefox,General,bugzilla,RESOLVED,FIXED,2018-09-05 15:11:06
+1488546,enhancement,Skip safe mode keypress checks in launcher process,Firefox,General,bugzilla,RESOLVED,FIXED,2018-09-07 11:16:14
+1488554,enhancement,Enable the launcher process by default on Nightly,Firefox,General,bugzilla,RESOLVED,FIXED,2020-03-13 06:25:51
+1488625,defect,Launcher process ignoring --no-deelevate when UAC disabled,Firefox,General,bugzilla,RESOLVED,FIXED,2018-09-05 21:40:19
+1488627,defect,PGO broken when launcher process is enabled by default,Firefox,General,bugzilla,RESOLVED,FIXED,2018-09-21 01:18:40
+1488872,enhancement,Launcher process: Treat --marionette as implicit --wait-for-browser,Firefox,General,bugzilla,RESOLVED,FIXED,2018-09-05 21:40:34
+1493845,enhancement,Launcher process: Disable cross-process DLL blocklist in ASAN builds,Firefox,General,bugzilla,RESOLVED,FIXED,2018-09-25 14:54:23
+1495049,enhancement,Launcher process: Treat headless mode as implicit --wait-for-browser,Firefox,General,bugzilla,RESOLVED,FIXED,2021-01-28 14:20:41
+1504247,defect,Define a high-resolution page load time histogram,Firefox,Tabbed Browser,bugzilla,RESOLVED,FIXED,2019-01-30 10:41:56
+1511078,defect,Temporary mechanism for runtime disabling of launcher process,Firefox,General,bugzilla,RESOLVED,FIXED,2019-01-17 17:32:54
+1520617,enhancement,LauncherRegistryInfo::ClearStartTimestamps should only block resetting when force-disabled,Firefox,General,bugzilla,RESOLVED,FIXED,2019-01-16 20:34:07
+1529429,enhancement,Tie launcher process enablement to SHIELD pref on Nightly,Firefox,General,bugzilla,RESOLVED,FIXED,2019-02-26 11:43:13
+1530539,enhancement,Set --enable-launcher-process to default to on past Nightly,Firefox,General,bugzilla,RESOLVED,FIXED,2019-02-28 03:09:15
+1530809,enhancement,LaunchUnelevated should use ProcessRuntime to start COM instaed of STARegion,Firefox,General,bugzilla,RESOLVED,FIXED,2019-02-28 03:09:39
+1531902,enhancement,Launcher process should remain fully enabled on Beta,Firefox,General,bugzilla,RESOLVED,FIXED,2019-05-03 11:31:10
+1532562,defect,Inconsistent launcher process status between about:support and telemetry,Firefox,General,bugzilla,RESOLVED,DUPLICATE,2019-05-03 11:31:10
+1536312,defect,Intermittent browser/components/customizableui/test/browser_884402_customize_from_overflow.js | Uncaught exception - undefined - timed out after 50 tries.,Firefox,Toolbars and Customization,bugzilla,RESOLVED,FIXED,2022-01-10 04:29:24
+1543256,task,Add a command-line flag to force-enable the launcher process,Firefox,General,bugzilla,RESOLVED,FIXED,2019-05-01 11:12:45
+1543807,enhancement,Launcher process should no longer depend on studies as of 68,Firefox,General,bugzilla,RESOLVED,FIXED,2019-05-16 08:39:18
+1548324,task,Launcher process: Improved -force-launcher implementation,Firefox,General,bugzilla,RESOLVED,FIXED,2019-05-02 21:31:44
+1558561,defect,Launcher Process needs to set length in RTL_OSVERSIONINFOW before calling RtlGetVersion,Firefox,General,bugzilla,RESOLVED,FIXED,2019-06-13 06:57:50
+1561901,enhancement,Implement smart highlighting for search suggestions,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-07-12 02:59:42
+1564538,task,Launcher process: Disable compiler emission of memset/memcpy calls in DllBlocklistWin.cpp,Firefox,General,bugzilla,RESOLVED,FIXED,2019-07-17 02:40:20
+1568553,enhancement,Evaluate use of interstitial when clicking Send/Monitor buttons in FxA toolbar menu,Firefox,Firefox Accounts,bugzilla,RESOLVED,INVALID,2019-08-07 19:02:46
+1573581,task,Add pref for megabar design update,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-10-30 03:36:18
+1575010,enhancement,Pad megabar panel with horizontal space,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-08-24 15:21:54
+1575360,enhancement,Add shadow effect to megabar when it's open,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-08-30 08:03:20
+1575651,defect,Improve megabar behaviour when ui.popup.disable_autohide is enabled,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-08-27 02:36:08
+1577000,defect,Fix Megabar breakout width on window resize,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-10-31 06:24:57
+1579004,enhancement,Clicking empty parts of the toolbar should shrink the megabar,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-10-31 06:28:26
+1583993,defect,Expanded megabar stays open after switching out of the Firefox window,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2022-01-10 05:31:25
+1584273,enhancement,Disable the megabar animation when prefers-reduced-motion is true,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-10-31 06:30:46
+1585458,defect,[Megabar] The Focused & Collapsed state uses the wrong border on macOS,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-10-30 03:15:40
+1586026,defect,Megabar should always expand on new tab opens,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-11-14 03:57:51
+1589696,defect,Restore end padding to TIP results,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2022-01-10 05:50:07
+1593659,task,Put the search button behind a pref,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-11-05 04:50:55
+1593661,task,Extend the megabar expanded status by 2px,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-11-05 02:09:27
+1593664,task,Evaluate increasing font size on expanded state,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-12 07:44:26
+1593825,task,Implement badged favicons,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-01-21 01:00:53
+1597698,task,"move all megabar related prefs (stripHttps, searchIcon, ...) prefs under a common branch",Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-11-27 01:12:36
+1599123,task,"Rename instances of ""search icon"" to ""search button""",Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2019-11-27 01:13:04
+1604932,enhancement,Implement a Top Sites provider,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-01-10 16:38:37
+1609699,defect,Rename browser.urlbar.searchTips pref to browser.urlbar.update1.searchTips,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-01-17 20:07:36
+1610271,defect,"A promise chain failed to handle a rejection: can't access property ""updateCount"", updateManager is undefined - stack: lastBrowserUpdateDate@resource:///modules/UrlbarProviderSearchTips.jsm:415:7",Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-01-23 11:32:24
+1613048,enhancement,Support browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features pref for Search Tips,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-05 08:39:34
+1613603,task,Add a localized alt attribute to the Interventions icon,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-06 13:51:50
+1613699,task,Rename browser.urlbar.update1.expandTextOnFocus pref to ...update2...,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-07 05:09:17
+1613855,enhancement,Set separate limits for the redirect and onboarding Search Tips,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-11 06:52:30
+1613869,task,Enable urlbar.update1.* prefs on early Beta,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-26 05:55:53
+1614651,enhancement,Add hidden pref to disable restrictions on Search Tips to help with testing,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-24 06:26:37
+1615276,task,Add subtest to ensure urlbar.searchTips.shownCount prefs are being incremented correctly,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-02-19 22:31:33
+1618878,defect,Synced tabs results disappear when the 2-lines layout is displayed,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-03-05 13:55:41
+1619547,defect,Redirect Search tips (google.com) are flicker displayed,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2020-03-19 16:40:32
+1627858,enhancement,Should have a user visible preference in about:preferences to disable Top Sites on focus,Firefox,Address Bar,bugzilla,RESOLVED,FIXED,2022-03-26 09:40:39
+1149277,defect,Increase the Line-Height in Reader View from 1.44 rem to 1.6 rem,Firefox,General,bwinton,RESOLVED,FIXED,2015-04-07 00:42:01
+1247342,defect,Create CDN endpoints and S3 buckets for remote new tab page,Firefox,New Tab Page,bwong,RESOLVED,FIXED,2018-01-08 11:49:30
+1429156,enhancement,"Policy: Don't show ""Your Rights"" notification",Firefox,Enterprise Policies,bytesized,RESOLVED,WONTFIX,2018-03-12 12:41:13
+1438243,enhancement,Improve the UI for about: pages blocked by policy,Firefox,Enterprise Policies,bytesized,RESOLVED,FIXED,2018-02-27 02:13:44
+1460086,enhancement,Remove or disable pref: browser.policies.alternatePath,Firefox,Enterprise Policies,bytesized,RESOLVED,FIXED,2018-05-30 15:20:33
+389274,defect,[FIX]Midas demo. (designMode) fails to work properly after restoring with session restore,Firefox,Session Restore,bzbarsky,RESOLVED,FIXED,2008-03-15 15:44:22
+648045,defect,Mark the active tab in minimized windows as inactive,Firefox,General,bzbarsky,RESOLVED,FIXED,2014-05-15 12:31:30
+1242972,defect,Make services/fxaccounts eslintable,Firefox,Sync,bzhao,RESOLVED,FIXED,2016-02-02 02:58:41
+1242975,defect,Make services/sync eslintable,Firefox,Sync,bzhao,RESOLVED,FIXED,2018-09-24 14:24:50
+1608308,task,add telemetry for libxul / omni.ja build ID matching to Corroborate.jsm,Firefox,General,cam,RESOLVED,FIXED,2021-01-05 19:43:52
+1299296,defect,adjust how telemetry collected for arewee10syet,Firefox,Extension Compatibility,capsicava+bz,RESOLVED,FIXED,2016-09-22 12:51:19
+1313408,defect,Performance Telemetry for SDK patches to Beta 50,Firefox,Extension Compatibility,capsicava+bz,RESOLVED,FIXED,2016-11-30 09:05:49
+1553498,enhancement,Create about:certificates,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-05-24 03:05:31
+1554700,enhancement,Set up an RPM handler for about:certificate,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-05-28 15:01:24
+1557458,enhancement,Send certificate information to about:certificate,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2024-05-28 02:10:57
+1563199,enhancement,Reformat the certificate for front-end use,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-07-25 09:26:25
+1566797,enhancement,Handle more than one cert received in the URL (about:certificate),Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-05 02:23:50
+1567561,enhancement,Render certificate info in about:certificate UI,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-05 15:10:27
+1568187,task,Add more tests for parse function (about:certificate),Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-06 02:43:40
+1568261,task,Add tests for bug 1566797,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-08 20:55:08
+1569737,enhancement,Getting a different result on cert.notAfter (about:certificate),Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-01 21:02:33
+1570978,defect,Getting different results when calling x509.subjectPublicKeyInfo in about:certificate and CS,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-19 20:48:00
+1572278,task,Adjust checkViewCertificate test function in browser_aboutCertError.js for the new cert viewer (about:certificate),Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-14 15:11:15
+1572368,task,Enable about:certificate by default on Nightly,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-20 02:43:07
+1572848,task,Adjust browser_certViewer.js tests for the new cert viewer (about:certificate),Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-19 15:04:38
+1573139,defect,Getting undefined in Certificate Authority (about:certificate),Firefox,Security,carolina.jimenez.g,RESOLVED,DUPLICATE,2019-08-13 06:11:03
+1575317,defect,addClassForPadding is throwing error (about:certificate),Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-08-21 09:53:42
+1575331,task,about:certificate should render Yes/No instead of true/false,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-09-24 09:15:29
+1580500,task,Hard-coded section names in new certificate viewer,Firefox,Security,carolina.jimenez.g,RESOLVED,DUPLICATE,2019-09-23 09:23:09
+1584548,defect,"""Modulus"" no longer collapsed on about:certificate",Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2022-01-10 05:37:56
+1589883,defect,The new about:certificates incorrectly reports the OCSP Must-Staple extension,Firefox,Security,carolina.jimenez.g,RESOLVED,FIXED,2019-11-11 09:10:20
+1467729,enhancement,Stackwalking should be disallowed for the stackwalk thread,Firefox,General,ccorcoran,RESOLVED,INVALID,2018-06-19 09:02:25
+1467730,enhancement,Stackwalk thread trigger should be restricted to WM_USER,Firefox,General,ccorcoran,RESOLVED,INVALID,2018-06-19 09:01:54
+1467731,enhancement,Digitally signed binary certificate verification hits the network,Firefox,General,ccorcoran,RESOLVED,FIXED,2018-06-09 05:11:31
+1467736,enhancement,Add DllBlocklist_Shutdown,Firefox,General,ccorcoran,RESOLVED,FIXED,2018-09-29 09:48:23
+1489092,defect,Fix clang compiler warnings about unused return value in mozglue,Firefox,General,ccorcoran,RESOLVED,FIXED,2018-09-19 09:50:47
+676563,enhancement,Bookmarks sync does not sync bookmark timestamps,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-09-24 14:24:50
+1022215,defect,Intermittent test_syncscheduler.js | test failed (with xpcshell return code: 0) | false == true | Unexpected exception 2147500036,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-09-24 14:24:50
+1054960,defect,Fix sync to handle the current search engine being stored outside of preferences,Firefox,Sync,chiovolonit,RESOLVED,WONTFIX,2016-09-27 08:05:39
+1236897,defect,Intermittent test_errorhandler.js | Test timed out,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-07 07:35:15
+1241316,defect,Show when the user last used each of her synced devices in the synced tabs menu panel,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-30 03:05:00
+1249520,defect,Read FxA/Sync configuration from /.well-known/fxa-client-configuration,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-01-02 19:52:52
+1253051,defect,Desktop client: upload records atomically,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-09-24 14:24:50
+1265419,defect,Add facility for measuring inconsistent client/server bookmark states,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-06-07 15:00:23
+1267917,defect,Report consistency of bookmarks data via telemetry.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-22 04:52:44
+1267919,defect,Create new sync telemetry ping type.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-08-14 19:14:47
+1268912,defect,Sync's client.name2 string should use a curly apostrophe/quote instead of a straight quote,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-07-29 03:27:34
+1273342,defect,Don't attempt to sync history records with a URL size greater than our maximum record size,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-11-22 19:34:29
+1283456,defect,HawkClient fails to properly handle errors emitted before,Firefox,Firefox Accounts,chiovolonit,RESOLVED,FIXED,2017-11-21 14:14:55
+1286915,defect,Implement a validator for the sync addon engine,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-30 23:37:47
+1286918,defect,Implement a validator for the sync password engine,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-08 03:08:35
+1286923,defect,Implement a validator for the sync forms engine,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-16 04:02:19
+1287473,defect,Unexpected high number of sync pings,Firefox,Sync,chiovolonit,RESOLVED,INCOMPLETE,2016-08-16 04:03:23
+1288445,defect,Sync telemetry ping should hash FxA UID,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-05 10:02:10
+1291030,defect,TPS fails to run on mac 10.11 if run against locally built firefox.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-08-05 03:32:31
+1294599,defect,Desktop should download and apply Sync records in batches,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-01-29 13:29:41
+1295058,defect,Batch Sync pings,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-22 13:56:02
+1295237,enhancement,Mobile bookmarks folder should appear in bookmarks panel,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-06-15 01:27:57
+1295582,defect,"Sync bookmark validator should better handle ""multipleParents"" check",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-14 08:31:31
+1296560,defect,Interrupting a Sync with many outgoing records causes a shutdown crash,Firefox,Sync,chiovolonit,RESOLVED,WORKSFORME,2016-11-21 11:59:31
+1296761,defect,Bookmark validator leaves child ids in the places root if it came from the server.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-08-25 15:24:27
+1297325,defect,Some missing client records not reported by bookmarks validator.,Firefox,Sync,chiovolonit,RESOLVED,DUPLICATE,2016-09-14 08:31:30
+1297400,defect,Client cycles are not reported as errors by the bookmark validator,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-21 03:07:35
+1299784,defect,Sync pings should include a device id.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-09-14 03:11:19
+1299978,defect,Ensure deleted bookmark reconciliation uploads the correct records,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-23 10:21:38
+1301389,defect,Sync Ping shouldn't include FxA UID or Device ID multiple times,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-01-06 08:10:22
+1304534,defect,Enable Send Tab to Device on non-nightly builds,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-02-02 07:02:54
+1305737,defect,Change notification displayed when an incoming tab can't determine the device name it came from,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-31 13:54:44
+1308240,defect,Typos in Collection.prototype.batch and Collection.prototype.commit getters,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-06 20:05:38
+1308567,defect,Track in Sync telemetry ping the other device types a user has,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-20 00:02:50
+1308841,defect,Bookmark validator should check all expected roots exist locally on the client,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-13 02:57:07
+1308994,defect,encodeURIComponent for sync batch/atomic upload query parameter,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-19 09:45:11
+1309774,defect,The bookmark validator should ignore or otherwise special-case local items that Sync will ignore,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-11-03 19:32:22
+1311557,defect,Sync ping will report errors for custom sync engines.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-26 17:47:01
+1311611,defect,Browser console error: TypeError: remoteDevices is undefined - telemetry.js:284:7,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-26 03:30:16
+1311782,defect,Bookmark validator should ignore the title field for roots,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-11-10 08:07:15
+1312015,defect,TPS should fail if we error when generating a sync ping record.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-10-26 18:34:29
+1312031,defect,"TPS failing: test-sync.js ASSERTION FAILED! places item not found; Incorrect keyword - expected: bugzilla, actual: bz for bookmark",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-11-02 17:20:20
+1312320,defect,Sync ping reports mozIStorageError as nserror,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-11-02 17:20:28
+1313573,defect,Have TPS validate sync pings,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-11-08 13:37:48
+1313731,defect,autoconfigured FxA auth URI is missing trailing /v1,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2016-11-03 19:32:51
+1314864,defect,Update fields exported in the derived parquet dataset for the sync ping,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-01-05 14:37:24
+1320772,defect,Atomic Uploads breaks stylishsync extension,Firefox,Sync,chiovolonit,RESOLVED,DUPLICATE,2018-09-24 14:24:50
+1321396,defect,Allow skipped records by default for sync engines,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-02-06 14:50:55
+1321740,defect,First sync after reauthenticating resets all engines and does a full sync,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-03-02 05:05:38
+1328737,defect,Sync doesn't register bookmark keywords,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-02-01 16:08:31
+1336186,defect,"Update bookmark validator to check ""pos"" of separator records again",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-02-23 06:12:20
+1337978,defect,"Unify the two notions of ""weak upload"" in sync.",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-07-25 05:29:12
+1345754,defect,Only validate when there are no pending changes,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-03-24 01:23:09
+1346175,enhancement,Sync event telemetry should record AsyncResource.serverTime in the extra field for more reliable flow analysis,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-04-19 16:59:10
+1350135,defect,TPS failure for test_history_collision.js Error: ASSERTION FAILED! Uri visits not found in history database,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-04-20 14:47:20
+1357798,enhancement,Sync ping errors should not include URL strings,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-06-20 02:30:39
+1357814,defect,"TPS failure for test_sync on ubuntu: places item not found; Item not found at the expected index, got 4, expected 10 for folder (location: menu, folder: foldera)",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-05-12 05:43:48
+1359268,enhancement,Add target device version and OS to sync event telemetry in parquet,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-05-01 16:10:44
+1361818,enhancement,TPS failure for tests with bookmarks because of validation finding a bunch of serverMissing.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-05-05 06:25:42
+1362099,enhancement,FxAccountsClient.getDeviceList truncates responses longer than around 8192 bytes,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-05-10 15:28:50
+1367543,defect,"TPS failure caused by resyncs: ""Automatic sync got triggered, which is not allowed""",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-05-25 18:33:05
+1368393,enhancement,"Clients engine doesn't handle duplicate commands correctly, causing multiple events to be ""sent"" but only one ""received""",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-06-20 02:30:58
+1372927,defect,Mobile Bookmarks folder should always appear in the places organizer for sync users.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-08-11 11:36:59
+1374500,enhancement,New sync engines for addresses and credit-cards,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-07-21 05:45:24
+1374722,enhancement,Expand the set of IDs bookmark repair requestor requests.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-08-01 02:29:44
+1377578,defect,TPS Tab and Addon tests fail,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-07-01 17:40:51
+1380094,enhancement,Separate non-extension form autofill changes made by sync,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-07-12 18:05:55
+1381641,enhancement,Flatten Sync Engine data,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-10-02 14:04:59
+1383773,enhancement,Fix TPS initialization/session restore race,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-07-25 18:26:44
+1383835,defect,Fix TPS intermittent sync_tabs.js failures.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-07-25 18:26:46
+1388224,defect,"Intermittent services/sync/tests/unit/test_service_getStorageInfo.js | test_invalid_json - [test_invalid_json : 70] ""undefined"" == 500 | test_invalid_json - [test_invalid_json : 82] ""NS_ERROR_NOT_AVAILABLE"" == ""SyntaxError""",Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-04 03:05:58
+1390338,enhancement,Enable legacy extensions when running TPS,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-08-15 02:55:21
+1393659,enhancement,Desktop confusion between max_post_bytes and max_request_bytes,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-08 07:21:56
+1400414,enhancement,Sync's logging should do less work if we aren't going to write a log,Firefox,Sync,chiovolonit,RESOLVED,WONTFIX,2017-10-02 14:52:27
+1400467,enhancement,Make WeaveCrypto use promises.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-09-28 03:19:47
+1401686,defect,sync error: max_post_bytes is too low,Firefox,Untriaged,chiovolonit,RESOLVED,FIXED,2017-09-21 16:33:12
+1401990,enhancement,Use max_request_bytes instead of max_post_bytes on desktop if both are provided.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-10-04 15:00:30
+1402985,defect,Investigate failing SyncView,Firefox,Sync,chiovolonit,RESOLVED,DUPLICATE,2017-09-25 20:17:54
+1403052,defect,tabs collection may exceed memcached server limits,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-10-31 08:39:28
+1407067,enhancement,Move Sync's validation and repair into a system addon,Firefox,Sync,chiovolonit,RESOLVED,WONTFIX,2017-11-27 21:44:13
+1411794,defect,Synced tabs library panel stops updating after some time,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-27 08:15:44
+1412351,enhancement,Sync should check for shutdown more frequently.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-16 16:54:11
+1415012,defect,Sync should not trigger immediate resync if some engines failed during the sync.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-08 13:10:02
+1416902,enhancement,test_service_sync_updateEnabledEngines.js fails every time for me.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-15 02:05:03
+1420349,defect,this.scheduler is undefined forcing sync very early after startup,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-29 17:24:07
+1421044,defect,Many TPS failures across multiple platforms and tests,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-11-29 02:12:42
+1423395,enhancement,Sync will duplicate history visits.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-12-19 14:09:26
+1425690,enhancement,Avoid getCharPref in browser-sync.js,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2017-12-20 12:10:11
+1425960,enhancement,Sync shouldn't hammer preferences so much.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-01-04 01:50:23
+1426627,enhancement,Typing in the urlbar loads 3 sync modules even when sync isn't enabled,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-01-10 02:11:33
+1432282,enhancement,Sync event telemetry table in redash should include os info for ping sender (and not just for the related device),Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-01-31 11:06:37
+1432995,enhancement,Sync telemetry should report more detail about http errors,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-02-08 16:37:04
+1435655,defect,History engine: set.add is not a function,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-02-08 02:08:41
+1438445,enhancement,bookmark validator confused about orphans,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-02-21 02:08:21
+1439675,enhancement,Fix invalid json in TPS test list,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-02-21 02:09:28
+1440334,enhancement,SyncedBookmarksMirror should use a jankYielder,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-02-28 02:33:57
+1444162,enhancement,Change button copy in reconnect state,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-03-22 10:02:30
+1447104,defect,Update TPS addon metadata to new format.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-03-20 03:14:29
+1451527,enhancement,Convert tps extension to a webextension,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-09-04 16:35:10
+1453497,enhancement,Update TPS dependency versions,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2018-04-13 02:50:55
+1621806,enhancement,Reduce frequency of client-side extension-storage syncs.,Firefox,Sync,chiovolonit,RESOLVED,FIXED,2020-04-28 01:33:28
+241532,defect,Ensure that Firefox can be easily deployed at 1.0,Firefox,General,chofmann,RESOLVED,WORKSFORME,2011-08-05 23:35:12
+1205178,defect,[EME] GMP installed while profile used in 32bit will be used if profile used in 64bit Firefox,Firefox,General,chris,RESOLVED,FIXED,2015-09-24 14:12:40
+1264173,defect,ProductAddonChecker can't download from servers that don't serve Content-Length headers,Firefox,General,chris,RESOLVED,FIXED,2024-12-20 18:08:49
+1265928,defect,Hide Adobe GMP on Windows XP in Firefox 46 and 47.,Firefox,General,chris,RESOLVED,FIXED,2016-05-02 13:04:36
+1039069,defect,Warn the user that customizing the preferred language list (Accept-Language) can be used for fingerprinting,Firefox,Settings UI,chungshengfu,RESOLVED,FIXED,2018-12-18 01:58:06
+1413780,enhancement,Make canvas permission a first-class permission,Firefox,Site Identity,chungshengfu,RESOLVED,FIXED,2019-01-22 06:19:31
+1251377,defect,"[e10s release criteria] Jank, responsiveness should not regress",Firefox,General,chutten,RESOLVED,FIXED,2016-07-14 18:56:05
+1255159,defect,Generate beta experiment comparison results for FX_REFRESH_DRIVER_SYNC_SCROLL_FRAME_DELAY_MS,Firefox,General,chutten,RESOLVED,FIXED,2016-03-23 10:02:04
+1262177,defect,e10s experiment reports need to be generated for the second part of the 46 experiment,Firefox,General,chutten,RESOLVED,FIXED,2016-04-08 06:43:43
+1439964,defect,"The image is wrongly displayed if the ""View Image"" option is used",Firefox,Screenshots,ckerschb,RESOLVED,DUPLICATE,2018-03-02 04:57:53
+1573958,task,Fix browser_temporary_permissions.js to work with Fission,Firefox,Site Identity,continuation,RESOLVED,FIXED,2019-11-15 14:33:22
+299286,defect,Move reporter and DOMI locale files from en-US.jar to reporter.jar/inspector.jar,Firefox,General,coopcoopbware,RESOLVED,FIXED,2006-03-12 18:40:17
+1234355,defect,"Remove ""Don't ask me again"" footgun option from the ""enable DRM"" info bar notification",Firefox,General,cpeterson,RESOLVED,FIXED,2021-06-15 02:38:57
+1424292,defect,Pocket referrer only sent when story has HTTPS URL,Firefox,New Tab Page,csadilek,RESOLVED,FIXED,2019-06-28 14:29:46
+1438200,enhancement,Use domain names as provided in Pocket feed response,Firefox,New Tab Page,csadilek,RESOLVED,FIXED,2019-06-28 14:29:46
+1440419,enhancement,Use probabilistic approach instead of counter for spoc frequency,Firefox,New Tab Page,csadilek,RESOLVED,FIXED,2019-06-28 14:29:46
+1440781,enhancement,Refreshing preloaded tabs interferes with spoc placement,Firefox,New Tab Page,csadilek,RESOLVED,FIXED,2019-06-28 14:29:46
+1555084,enhancement,Create handshake component,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-06-10 20:23:13
+1555118,enhancement,Create JS/CSS files for about:certificate page,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-06-10 20:23:17
+1555135,enhancement,Add InfoItem web component,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-06-10 20:23:21
+1555738,enhancement,Add InfoGroup component,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-06-25 02:45:14
+1555739,enhancement,Add CertificateSection component,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-06-25 02:45:18
+1557766,enhancement,Add Fluent to about:certificate,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-07-10 21:10:03
+1560555,enhancement,Add rtl support to certificate viewer,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-07-05 20:49:36
+1565265,task,Add missing 'role=tablist' to certificate-section component of certificate viewer,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-07-15 14:48:19
+1565266,task,Add 'certificate-viewer-' prefix to fluent IDs in certificate-section and info-item components.,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-07-15 14:48:21
+1565638,task,Add missing error-section files to certviewer.html and jar.mn,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-07-15 14:48:27
+1568972,task,Add tests for displaying error-section,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-08-15 12:37:41
+1568990,task,Create tests for warning UI in certificate-viewer,Firefox,Security,danielleleb12,RESOLVED,DUPLICATE,2020-01-30 05:28:42
+1572085,task,Create fluent-friendly function to prevent text overflow in certificate viewer,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-08-19 15:04:31
+1572189,task,Add padding between sub-sections,Firefox,Security,danielleleb12,RESOLVED,FIXED,2019-08-15 12:37:53
+249735,defect,F6 goes to the first focusable element instead of the address bar (does not focus on location bar),Firefox,Keyboard Navigation,dao+bmo,RESOLVED,FIXED,2012-05-03 19:57:18
+404109,enhancement,"move the Home button to the Bookmarks toolbar, and reset toolbars for Firefox 3",Firefox,Toolbars and Customization,dao+bmo,RESOLVED,WONTFIX,2009-08-13 17:26:53
+424877,defect,remove FAMFAMFAM / Silk icons from themes,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2008-04-13 17:48:36
+518533,defect,back and forward buttons have the wrong orientation in RTL mode on OS X,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2009-10-06 09:54:07
+521188,defect,AeroPeek object leaks into global scope,Firefox,General,dao+bmo,RESOLVED,FIXED,2010-12-17 06:59:36
+1034077,defect,Location bar shouldn't strip whitespace when pasting,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2014-07-16 09:13:01
+1054740,defect,"When restoring a session, ""about:home"" is displayed in the selected tab before the tab is restored",Firefox,Session Restore,dao+bmo,RESOLVED,FIXED,2022-01-07 02:49:26
+1180200,defect,[Control Center] Replace hardcoded colors with platform colors where appropriate,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2016-05-10 09:11:37
+1295502,defect,"2.1 - 4.09% tart  / tresize / tsvgx  (linux64, windows7-32, windows8-64) regression on push 6af49d08884d76de44efd9387bbe340921652364 (Fri Aug 12 2016)",Firefox,Theme,dao+bmo,RESOLVED,FIXED,2016-09-12 06:30:16
+1297806,defect,15% linux cart regressions from bug 1022573,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2016-09-14 07:19:12
+1302307,defect,blocked-permission-icon margin should only apply within the identity block,Firefox,Site Identity,dao+bmo,RESOLVED,FIXED,2016-09-27 00:09:00
+1345315,enhancement,_handleTabTelemetryEnd can be too expensive,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2022-03-02 07:56:28
+1356183,defect,MousePosTracker should use event.clientX instead of event.screenX - window.mozInnerScreenX to avoid flushing layout,Firefox,General,dao+bmo,RESOLVED,WONTFIX,2017-05-10 13:18:36
+1356655,enhancement,"adjustTabstrip is slow, due to flushing layout",Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2017-05-20 03:54:22
+1356663,defect,3.5ms uninterruptible reflow at _calcMouseTargetRect@chrome://browser/content/tabbrowser.xml:7763:27 when the status text changes,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2022-03-02 08:01:39
+1356911,defect,CustomizableUI.unregisterBuildWindow is slow when closing windows,Firefox,Toolbars and Customization,dao+bmo,RESOLVED,FIXED,2017-05-10 14:11:11
+1358387,defect,1.02ms uninterruptible reflow at set_label@chrome://browser/content/tabbrowser.xml:7593:37,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2022-03-02 08:03:08
+1358721,defect,5.05ms uninterruptible reflow at adjustTabstrip@chrome://browser/content/tabbrowser.xml:5949:24,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2022-03-02 08:03:56
+1362011,defect,Navigation toolbar overflow button is messed up on Linux,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-05-16 05:42:26
+1362083,defect,Toolbarbutton icons should be 16x16 rather than 18x18,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-08-18 04:06:16
+1362542,enhancement,4.26ms uninterruptible reflow at _updateTabsVisibilityStatus@chrome://browser/content/tabbrowser.xml:7481:1,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2022-03-02 08:06:57
+1363033,enhancement,Increase Length of Tab Label Fade,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-05-23 01:59:40
+1363477,enhancement,"Replace content-contextmenu.svg with back.svg, forward.svg, reload.svg etc.",Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-05-10 06:28:02
+1363909,enhancement,Enable browser_menuButtonFitts.js on Mac on Linux,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-05-11 07:22:01
+1364661,enhancement,Remove _fillTrailingGap,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2017-05-14 09:51:51
+1366405,defect,We're forcing the window's main layer to be transparent on Windows 10 because we think it has a glass effect,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2021-10-12 03:50:31
+1367009,defect,Sidebar header label is too small,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-13 11:56:01
+1367046,enhancement,Stop reducing the location and search bars' opacity for lightweight themes,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-05-28 03:20:56
+1368016,enhancement,Compact themes should stop messing with the back and forward buttons,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-05-28 03:20:16
+1368161,enhancement,Remove some non-Photon CSS variable declarations from Photon,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-05-30 07:45:09
+1368311,defect,Sidebar header icons are invisible with dark OS themes,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-04 16:04:17
+1368500,enhancement,pre-Photon --toolbarbutton-hover-background and --toolbarbutton-active-background variable values are still used on Windows 7,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-08-10 05:06:47
+1368945,defect,Sidebar header shouldn't use the same icon for web content as for the Bookmarks sidebar,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-18 14:45:31
+1370503,enhancement,Remove leftover .toolbarbutton-1 > .toolbarbutton-menu-dropmarker styling,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-06-08 07:10:17
+1380966,enhancement,Increase the size of the tab overflow indicator,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-08-09 06:29:29
+1381496,enhancement,WARNING: Using fallback for accent color - UI code failed to use the -moz-windows-accent-color-applies media query properly,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-07-20 05:45:59
+1383026,enhancement,Remove gradient from the status panel's background,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-07-24 03:40:16
+1383031,enhancement,Rename customization-uidensity-menu-button* classes and ids since these are menuitems,Firefox,Toolbars and Customization,dao+bmo,RESOLVED,FIXED,2017-07-22 03:50:07
+1384893,enhancement,Add-on post-install notification shouldn't use --toolbarbutton-icon-fill nor menuPanel.svg,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-07-31 16:45:57
+1384895,defect,Manage Share Providers button icon is wrongly sized and shouldn't use --toolbarbutton-icon-fill,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-07-28 06:33:15
+1384898,enhancement,Don't bother setting default fill colors for the downloads indicator,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-07-28 06:33:22
+1387043,enhancement,Remove obsolete rules from browser/themes/osx/compacttheme.css,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-08-22 05:51:27
+1387389,defect,Tab strip overflow indicator should flush with the selected tab,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-08-11 16:10:01
+1387420,enhancement,Remove obsolete rules from browser/themes/windows/compacttheme.css and browser/themes/linux/compacttheme.css,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-08-06 02:11:49
+1387602,enhancement,Update customize mode favicon,Firefox,Toolbars and Customization,dao+bmo,RESOLVED,FIXED,2017-08-22 09:31:30
+1389008,defect,Stop centering the tab label on Mac,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-03-03 23:58:41
+1389740,enhancement,Consolidate URL bar history dropmarker styling,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-09-06 09:28:46
+1391191,defect,Consolidate navigator toolbox bottom border styling,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-06 04:37:44
+1391613,enhancement,Update style for hover and keyboard selection in URL bar to be same as hamburger menu,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-08-30 19:54:23
+1391743,defect,[Photon]: Hoverbutton of the Tabscroll Arrows overlaps the divider in the Tabstrip,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-09-06 03:09:56
+1393218,task,Remove remaining Pocket CSS that is specific to the Pocket toolbar button now that it has been moved to the page action area,Firefox,Pocket,dao+bmo,RESOLVED,FIXED,2020-05-04 06:12:01
+1398142,defect,Pinned tabs are sometimes overlapping and cluttered after restoring a session,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2017-10-25 20:41:28
+1401908,enhancement,Clean up text-shadow rules for Dark and Light theme,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-09-21 07:26:31
+1403734,defect,Customize mode footer buttons need a 2px border radius to match button styles in design system guide,Firefox,Toolbars and Customization,dao+bmo,RESOLVED,FIXED,2017-10-11 03:01:06
+1403853,defect,Hide the menu button separator in popup windows,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-02 08:11:30
+1404248,defect,Reduce margin between the address bar and the menu button in popup windows,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-02 11:16:53
+1404451,enhancement,Update color of glass borders around the UI,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-12 15:01:39
+1408325,enhancement,Stop using border-image for tab separators,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-17 02:53:12
+1409407,enhancement,Clean up #toolbar-menubar ~ #TabsToolbar selectors,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-10-19 15:58:44
+1412245,enhancement,Replace --tab-toolbar-navbar-overlap variable with preprocessor directive,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2017-11-08 06:39:19
+1413499,enhancement,Simplify disabled toolbar button styling,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-06-02 01:23:08
+1414252,enhancement,Remove dysfunctional performance optimization in tabbrowser's resize handler,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2017-11-28 12:26:54
+1415235,enhancement,Rename adjustTabstrip to something more meaningful,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2017-11-08 14:21:02
+1415863,defect,Rename mTabBox to just tabbox,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2018-03-14 12:11:45
+1426350,enhancement,Move tab context menu tests to browser/base/content/test/tabs/,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2017-12-21 18:17:01
+1442398,defect,'gBrowser is null' logs showing up during testing,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2021-11-29 02:51:11
+1442651,task,Remove the tabbrowser element and binding,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2021-11-29 02:50:53
+1443318,defect,"Intermittent browser_check_identity_state.js,browser_urlbarAboutHomeLoading.js,browser_remoteness_flip_on_restore.js | Uncaught exception - at chrome://global/content/bindings/tabbox.xml:384 - TypeError: this.tabbox is undefined",Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2021-11-29 02:51:05
+1448017,enhancement,Ensure ToolbarIconColor sets the brighttext attribute before the initial layout to spare a potential restyle after the initial layout,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-03-24 10:34:00
+1448572,defect,ToolbarIconColor.uninit and CompactTheme.uninit need to run even if the load event wasn't handled,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-03-26 08:34:10
+1461093,defect,Remove vertical padding from #titlebar-buttonbox,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-05-30 14:15:25
+1468060,defect,No disabled styling for toolbaritem-combined-buttons in appMenu-popup,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-09-07 07:08:34
+1468890,defect,Intermittent browser/components/customizableui/test/browser_967000_button_charEncoding.js | Test timed out -,Firefox,Toolbars and Customization,dao+bmo,RESOLVED,FIXED,2022-01-10 04:35:12
+1475537,enhancement,Clean up addTab parameter handling,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2018-07-27 09:58:52
+1477985,enhancement,Implement pref switch for new awesome bar implementation,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-09-14 03:32:45
+1478041,enhancement,Remove some old UI migration steps,Firefox,General,dao+bmo,RESOLVED,FIXED,2019-03-14 03:37:49
+1479874,defect,"On Windows 10, menu bar items shouldn't change their color when becoming active",Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-10-04 08:31:26
+1481321,defect,50KB JS regression after enabling browser.ctrlTab.recentlyUsedOrder,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2018-08-09 07:24:53
+1489552,enhancement,Let BrowserWindowTracker.getTopWindow use the module's internal window list instead of nsIWindowMediator::getZOrderDOMWindowEnumerator / getMostRecentWindow,Firefox,General,dao+bmo,RESOLVED,FIXED,2020-04-07 04:19:13
+1491108,defect,arrow icon too large in bookmark dialog on macOS,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-09-18 14:12:56
+1491245,task,Port formatValue (i.e. URL highlighting) from urlbarBindings.xml to UrlbarInput.jsm,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-28 01:27:44
+1491252,enhancement,Port URL overflow handling from urlbarBindings.xml to UrlbarInput.jsm,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-09-24 06:44:13
+1491255,task,Port URL trimming from urlbarBindings.xml to UrlbarInput.jsm,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-28 01:27:08
+1492810,enhancement,Display favicons in UrlbarView results,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-31 11:53:07
+1492842,enhancement,Implement UrlbarInput up/down key event handling to navigate within the UrlbarView,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-07 07:31:44
+1493385,enhancement,Increase PersonalToolbar height when clicking toolbarbutton,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-09-26 15:34:31
+1493390,defect,Main menu entries lose padding on mousedown,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-09-24 07:15:01
+1493544,defect,Customization mode: Theme menu entries get larger padding on mousedown,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-09-25 02:56:36
+1494204,defect,Hovering disabled .subviewbutton should not change text color,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-09-26 15:29:17
+1496152,enhancement,UrlbarInput focused getter is broken,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-10-10 02:20:36
+1496165,enhancement,Rename UrlbarInput event handlers for clarity,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-10-03 21:06:55
+1496703,defect,"""Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsIEditor.rootElement]"" in UrlbarValueFormatter::update when exiting customize mode",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-10-10 09:21:09
+1497464,enhancement,UrlbarInput value setter needs to call formatValue,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-10-09 09:26:16
+1497814,enhancement,Clean up UrlbarInput getters and setters,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-10-10 09:21:12
+1499310,enhancement,Remove moz-action uris handling from Quantum Bar,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-01-16 20:31:50
+1500080,task,UrlbarInput::value getter should return the untrimmed value,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-28 01:27:35
+1501235,enhancement,Move menubar autohide code from xul.css to browser.css,Firefox,General,dao+bmo,RESOLVED,FIXED,2018-10-23 15:27:12
+1501270,enhancement,Set the UrlbarInput value to the target URL when selecting a result,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-10-24 09:49:26
+1501624,enhancement,UrlbarInput: Add a method for setting the value from a result and migrate urlbar tests away from setting textValue,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-10-26 08:54:42
+1501699,defect,Ctrl+Shift+Tab doesn't open the All Tabs panel,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2018-11-29 00:18:30
+1503304,defect,toolbar_text doesn't always fall back to textcolor,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-04-11 02:06:08
+1503306,defect,Properly set accentcolor and textcolor properties for Light and Dark themes,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2021-11-29 03:11:19
+1503689,enhancement,Move browser_urlHighlight.js and browser_urlOverflow.js to browser/components/urlbar/,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-21 08:30:25
+1504985,defect,Intermittent browser/components/urlbar/tests/browser/browser_UrlbarInput_tooltip.js | Test timed out -,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2020-04-20 02:03:49
+1505069,defect,Contextual Feature Recommendation popup-notification abuses --lwt-text-color,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-11-08 22:59:55
+1505334,defect,Fix --toolbarbutton-icon-fill-opacity override for the tabs toolbar using the Dark / Light themes on Aero Glass,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-01-07 01:13:15
+1505801,defect,Find in page bar UI becomes mis-colored after entering text,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-08-21 08:08:03
+1506071,defect,Background tab overflow indicator doesn't animate anymore,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2018-12-28 07:14:31
+1506190,defect,Title bar buttons shouldn't overlap the border between the tab bar and the nav bar,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-03-20 06:08:29
+1506261,enhancement,Convert search-one-offs from a custom element to a plain JS class and initialize it lazily,Firefox,Search,dao+bmo,RESOLVED,FIXED,2018-11-20 02:12:13
+1507096,enhancement,Move --space-above-tabbar padding from #TabsToolbar to #TabsToolbar > .toolbar-items,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-11-16 01:56:37
+1509610,defect,"Hitting Enter in the address bar fails with 'TypeError: openParams is undefined; can't access its ""postData"" property'",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-31 11:51:39
+1510579,enhancement,Load scripts in global-scripts.inc the same way browser.xul does,Firefox,General,dao+bmo,RESOLVED,FIXED,2018-11-28 20:35:36
+1510599,enhancement,Backport simplified URL tooltip implementation from UrlbarInput.jsm to urlbarBindings.xml,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-11-28 20:35:45
+1511652,defect,Ctrl+Tab previews can get an unexpected focus ring on Windows,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2018-12-02 01:52:13
+1511744,enhancement,Move UrlbarView overflow and underflow handlers from the class constructor to dedicated methods,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-05 02:25:18
+1511745,enhancement,"Make ""Unrecognized urlbar event"" exceptions more specific and provide an Error object",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-05 02:25:21
+1511856,defect,browser_UrlbarInput_tooltip.js times out if the mouse pointer is over the address bar before the test starts,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-05 02:25:31
+1512650,enhancement,Allow overriding actions like Switch to tab,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2020-10-19 13:23:56
+1512661,enhancement,Let up/down keys open the results popup,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-01-23 02:03:32
+1512824,enhancement,Don't attempt to reopen the results panel when it's already open,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-11 21:15:41
+1513337,task,Inline quantumbar markup into browser.xhtml,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-10-10 08:36:56
+1513468,enhancement,Remove spacer above tab toolbar items,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2019-02-14 01:33:32
+1513845,enhancement,Stop using XPCOMUtils.defineLazyGetter for gNavigatorBundle,Firefox,General,dao+bmo,RESOLVED,FIXED,2018-12-13 14:47:38
+1514139,defect,Quantumbar: Allow moving the cursor by clicking in the address bar while the results popup is open,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-03-29 06:06:53
+1514497,task,"Remove unused autocomplete-result-popupset and <children includes=""toolbarbutton""/> from the urlbar binding",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-28 01:24:26
+1514505,task,Remove unused urlbar-textbox-container,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-28 01:24:33
+1514509,task,"Remove unused image, stack, deck include points from urlbar binding",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-28 01:24:43
+1515284,enhancement,Quantumbar: Make clicking the history dropmarker work,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-03-29 06:09:57
+1515285,enhancement,switch to tab only works with the mouse,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-01-14 13:58:03
+1515307,defect,Opening the popup with up/down when a string is typed should search that string,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-04-01 06:52:10
+1515323,enhancement,Port urlbarBindings.xml changes from bug 1315509 to UrlbarInput,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2018-12-21 20:19:51
+1516083,enhancement,"Add ""Search Tabs"" to the all tabs menu",Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2025-11-16 18:43:51
+1516088,enhancement,Implement UrlbarInput::handleRevert and Escape key handling,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-01-04 08:13:43
+1518024,defect,[RTL] Awesomebar dropdown items are messed up,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2020-09-01 02:31:59
+1518441,enhancement,Remove obsolete styling for toolbarseparators in the downloads panel footer,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-01-08 14:04:47
+1519589,defect,[Quantumbar] Middle-clicking item in dropdown should load item's url,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-07-09 06:13:03
+1521231,enhancement,Stop using --panel-disabled-color for subviewbutton shortcuts,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-04-12 05:11:25
+1522529,enhancement,Remove focus hack from the gURLBar getter and properly implement UrlbarInput focus and blur methods,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-01-24 13:50:54
+1523812,defect,Trying to change the selection when there isn't already a selection throws an error,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-02-02 01:46:50
+1524123,defect,"Search alias results should use engine favicons, not the magnifying glass",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-03-12 02:52:50
+1524230,enhancement,UrlbarView: Display the device name for remote tab results,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-01-31 20:00:38
+1524524,enhancement,Prevent the UrlbarView panel from continuously shrinking and growing while typing,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-02-01 14:21:06
+1524561,enhancement,[Accessibility] Quantumbar results popup has no accessibility semantics,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-03-08 14:01:35
+1525269,enhancement,Implement UrlbarView::selectedIndex,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2020-09-01 02:34:49
+1525318,enhancement,Quantumbar: Make clicking one off buttons work,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-03-09 22:43:40
+1526528,enhancement,Quantumbar: Search and tab icons should be opaque in the selected row,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-02-09 01:43:51
+1526597,defect,"Canonization should be applied to all result types, and the input's value should reflect the canonized URL",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-02-22 11:17:18
+1526670,defect,UrlbarView: Let the title not consume more than 70% of the available width,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-02-12 08:31:42
+1526679,enhancement,UrlbarView::selectedResult should handle no result being selected,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-02-11 14:05:44
+1527260,enhancement,Integrate one off buttons into keyboard navigation,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-03-07 09:47:11
+1527724,defect,Firefox inserts space after search engine keyword in quantum bar,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2022-01-10 04:25:04
+1533286,defect,Stop using --panel-disabled-color for subviewbutton shortcuts (where the subviewbutton is also a menuitem),Firefox,Theme,dao+bmo,RESOLVED,DUPLICATE,2019-03-07 01:11:00
+1535263,defect,"Quantumbar: Move role=""combobox"" from the input field to a parent node",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-03-14 14:44:58
+1535277,enhancement,Remove pre-Firefox 57 UI migration steps,Firefox,General,dao+bmo,RESOLVED,FIXED,2019-03-19 09:35:27
+1537716,defect,Quantumbar: Suppress a11y focus for the auto-selected result,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-04-05 06:24:15
+1540104,defect,Tags get duplicated when updating results that had tags already,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2022-01-10 04:30:52
+1545394,enhancement,Keep stale rows in the view while receiving new results,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2020-09-01 02:26:07
+1548860,defect,Set a11y focus in the UrlbarView when arrowing down and remove it on backspace,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-05 13:40:13
+1550036,defect,UrlbarView should ignore vertical overflow events when applying the fade-out effect,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-05-29 07:19:27
+1554542,defect,browser.urlbar.doubleClickSelectsAll:true doesn't work with Quantumbar,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2022-01-10 04:47:27
+1559363,defect,"Open-view-on-focus mode should only apply when the user explicitly focuses the address bar, not on autofocus",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-06-25 08:08:54
+1560398,task,Merge appMenu-fxa-status with appMenu-fxa-container,Firefox,Firefox Accounts,dao+bmo,RESOLVED,FIXED,2019-07-17 04:50:06
+1561325,task,Use <image> instead of <dropmarker> for the urlbar history dropmarker,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-07-17 01:22:05
+1562691,defect,gURLBarHandler.formatValue() doesn't work with the quantumbar enabled (potentially breaking https strikethrough for active mixed content),Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2022-01-10 04:59:57
+1564830,task,Remove userInitiatedFocus flag,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-07-11 09:23:14
+1567384,defect,One-off search buttons no longer get accessibility focus,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2022-01-10 05:17:02
+1567406,task,Use ids instead of classes for urlbar-input and urlbar-scheme,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-07-19 15:07:50
+1567426,task,Convert urlbar-go-button from class to id,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-07-19 15:07:54
+1567520,task,"Remove obsolete browser/components/urlbar/tests/browser/Panel.jsm, urlbarAddonIframe.html, urlbarAddonIframe.js, urlbarAddonIframeContentScript.js",Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-07-22 11:02:41
+1568487,task,Remove default xul namespace from browser/base/content/browser.css,Firefox,General,dao+bmo,RESOLVED,FIXED,2019-09-03 07:25:15
+1575238,task,Remove tabs-newtab-button class,Firefox,Tabbed Browser,dao+bmo,RESOLVED,FIXED,2019-10-17 05:22:20
+1575563,defect,Improve Megabar input layout,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-08-27 05:58:59
+1575645,defect,Fix Megabar vertical centering,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-09-02 02:01:19
+1575650,defect,Megabar should be regular width when a new window is opened,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-08-24 15:22:22
+1575822,task,Rename #urlbar-display-box and friends and consolidate related styling,Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-10-17 05:23:16
+1576847,task,"Remove obsolete #wrapper-urlbar-container[place=""palette""] rule",Firefox,Theme,dao+bmo,RESOLVED,FIXED,2019-10-17 05:23:42
+1577472,defect,Always use position:absolute for the megabar so it doesn't get reframed on focus,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2020-02-05 03:02:05
+1577752,task,Use padding-block and padding-inline for the urlbar's one-off search button adjustments,Firefox,Address Bar,dao+bmo,RESOLVED,FIXED,2019-09-02 02:06:08
+1577801,defect,Stop messing with aria-activedescendant when mousing over one-off search buttons,Firefox,Search,dao+bmo,RESOLVED,FIXED,2019-09-02 02:06:17

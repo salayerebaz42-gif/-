@@ -1,0 +1,6 @@
+﻿Model,Accuracy,Precision,Recall,F1-Score
+Naive Bayes (منفرد),84.97,86.21,84.97,84.88
+Ensemble (Hard Voting),84.81,85.07,84.81,84.78
+Ensemble (Soft Voting),84.64,84.74,84.64,84.64
+Neural Network (منفرد),83.81,83.9,83.81,83.8
+SVM (منفرد),81.8,81.88,81.8,81.76

@@ -1,0 +1,13 @@
+﻿Scenario,Model,Train Size,Test Size,Accuracy,Precision,Recall,F1-Score
+Firefox+Eclipse -> VSCode,Naive Bayes,2000,994,50.8,66.25,50.8,51.41
+Firefox+Eclipse -> VSCode,SVM,2000,994,57.75,63.39,57.75,58.71
+Firefox+Eclipse -> VSCode,Random Forest,2000,994,48.69,51.47,48.69,47.9
+Firefox+Eclipse -> VSCode,Neural Network,2000,994,63.28,65.45,63.28,63.63
+Firefox+VSCode -> Eclipse,Naive Bayes,1994,1000,47.6,63.42,47.6,44.52
+Firefox+VSCode -> Eclipse,SVM,1994,1000,53.1,61.62,53.1,53.28
+Firefox+VSCode -> Eclipse,Random Forest,1994,1000,44.7,53.98,44.7,43.66
+Firefox+VSCode -> Eclipse,Neural Network,1994,1000,60.8,65.13,60.8,61.03
+Eclipse+VSCode -> Firefox,Naive Bayes,1994,1000,48.6,62.16,48.6,49.28
+Eclipse+VSCode -> Firefox,SVM,1994,1000,60.4,65.19,60.4,61.4
+Eclipse+VSCode -> Firefox,Random Forest,1994,1000,39.0,50.93,39.0,40.87
+Eclipse+VSCode -> Firefox,Neural Network,1994,1000,60.8,64.67,60.8,61.57

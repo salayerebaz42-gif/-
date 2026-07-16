@@ -1,0 +1,13 @@
+﻿Scenario,Model,Accuracy,F1
+Train: Firefox+Eclipse  |  Test: VSCode,Naive Bayes,50.8,51.41
+Train: Firefox+Eclipse  |  Test: VSCode,SVM,57.75,58.71
+Train: Firefox+Eclipse  |  Test: VSCode,Neural Network,63.28,63.63
+Train: Firefox+Eclipse  |  Test: VSCode,Random Forest,48.69,47.9
+Train: Firefox+VSCode   |  Test: Eclipse,Naive Bayes,47.6,44.52
+Train: Firefox+VSCode   |  Test: Eclipse,SVM,53.1,53.28
+Train: Firefox+VSCode   |  Test: Eclipse,Neural Network,60.3,60.57
+Train: Firefox+VSCode   |  Test: Eclipse,Random Forest,46.2,45.34
+Train: Eclipse+VSCode   |  Test: Firefox,Naive Bayes,48.6,49.28
+Train: Eclipse+VSCode   |  Test: Firefox,SVM,60.3,61.31
+Train: Eclipse+VSCode   |  Test: Firefox,Neural Network,60.6,61.4
+Train: Eclipse+VSCode   |  Test: Firefox,Random Forest,37.7,39.4
