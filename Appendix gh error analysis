@@ -1,0 +1,191 @@
+# پیوست ف: کد تحلیل خطا (Error Analysis)
+# این کد خطاهای مدل نایو بیز (بهترین مدل کلاسیک) و BERT (بهترین مدل عمیق)
+# را استخراج کرده، ماتریس درهم‌ریختگی (Confusion Matrix) هر یک را می‌سازد
+# و نمونه‌هایی از گزارش‌های اشتباه طبقه‌بندی‌شده را برای تحلیل کیفی ارائه
+# می‌دهد.
+#
+# توجه: باید روی Google Colab با GPU اجرا شود (به دلیل نیاز BERT).
+
+import pandas as pd
+import numpy as np
+import torch
+from torch.utils.data import TensorDataset, DataLoader
+from torch.optim import AdamW
+from transformers import BertTokenizer, BertForSequenceClassification
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
+
+RANDOM_STATE = 42
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"دستگاه مورد استفاده: {device}")
+
+TOPIC_NAMES = {
+    1: "خطاهای هوش مصنوعی",
+    2: "خطاهای مرورگر و تست",
+    3: "خطاهای رابط کاربری",
+    4: "خطاهای ویرایشگر و کد",
+    5: "خطاهای تنظیمات و همگام‌سازی",
+}
+
+# ---------------------------------------------------------------
+# ۱. بارگذاری داده‌ها و تقسیم مشترک (طبقه‌ای، مطابق آزمون McNemar)
+# ---------------------------------------------------------------
+df = pd.read_csv("all_bugs_topics.csv")
+labels_full = (df['topic'] - 1).tolist()
+
+# مطابق دقیق با پیوست ط: TF-IDF روی کل مجموعه داده fit می‌شود و سپس تقسیم انجام می‌گیرد
+texts_full = df['clean_title'].astype(str).tolist()
+vectorizer = TfidfVectorizer(max_features=1000)
+X_tfidf_full = vectorizer.fit_transform(texts_full)
+
+idx_train, idx_test = train_test_split(
+    df.index, test_size=0.2, random_state=RANDOM_STATE
+)
+
+texts_train = df.loc[idx_train, 'clean_title'].astype(str).tolist()
+texts_test = df.loc[idx_test, 'clean_title'].astype(str).tolist()
+titles_test = df.loc[idx_test, 'title'].astype(str).tolist()   # عنوان اصلی برای نمایش قابل‌فهم
+projects_test = df.loc[idx_test, 'project'].astype(str).tolist()
+y_train = (df.loc[idx_train, 'topic'] - 1).tolist()
+y_test = (df.loc[idx_test, 'topic'] - 1).tolist()
+
+# ---------------------------------------------------------------
+# ۲. آموزش Naive Bayes
+# ---------------------------------------------------------------
+print("\nدر حال آموزش Naive Bayes ...")
+X_train_tfidf = X_tfidf_full[idx_train]
+X_test_tfidf = X_tfidf_full[idx_test]
+
+nb_model = MultinomialNB()
+nb_model.fit(X_train_tfidf, y_train)
+nb_preds = nb_model.predict(X_test_tfidf)
+print(f"دقت Naive Bayes: {accuracy_score(y_test, nb_preds):.2%}")
+
+# ---------------------------------------------------------------
+# ۳. آموزش BERT (بهترین ابرپارامترها)
+# ---------------------------------------------------------------
+print("\nدر حال آموزش BERT (LR=2e-5, Batch=8, Epochs=5) ...")
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+def tokenize(texts):
+    return tokenizer(texts, padding=True, truncation=True, max_length=64, return_tensors='pt')
+
+train_enc = tokenize(texts_train)
+test_enc = tokenize(texts_test)
+
+train_dataset = TensorDataset(train_enc['input_ids'], train_enc['attention_mask'], torch.tensor(y_train))
+test_dataset = TensorDataset(test_enc['input_ids'], test_enc['attention_mask'], torch.tensor(y_test))
+
+train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=8)
+
+bert_model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=5)
+bert_model.to(device)
+optimizer = AdamW(bert_model.parameters(), lr=2e-5)
+
+bert_model.train()
+for epoch in range(5):
+    total_loss = 0
+    for batch in train_loader:
+        input_ids, attention_mask, batch_labels = [b.to(device) for b in batch]
+        optimizer.zero_grad()
+        outputs = bert_model(input_ids, attention_mask=attention_mask, labels=batch_labels)
+        loss = outputs.loss
+        loss.backward()
+        optimizer.step()
+        total_loss += loss.item()
+    print(f"    epoch {epoch+1}/5 - loss: {total_loss/len(train_loader):.4f}")
+
+bert_model.eval()
+bert_preds = []
+with torch.no_grad():
+    for batch in test_loader:
+        input_ids, attention_mask, _ = [b.to(device) for b in batch]
+        outputs = bert_model(input_ids, attention_mask=attention_mask)
+        preds = torch.argmax(outputs.logits, dim=1)
+        bert_preds.extend(preds.cpu().numpy())
+bert_preds = np.array(bert_preds)
+print(f"دقت BERT: {accuracy_score(y_test, bert_preds):.2%}")
+
+y_test_arr = np.array(y_test)
+
+# ---------------------------------------------------------------
+# ۴. ماتریس درهم‌ریختگی (Confusion Matrix) برای هر دو مدل
+# ---------------------------------------------------------------
+def print_confusion(name, y_true, y_pred):
+    cm = confusion_matrix(y_true, y_pred, labels=[0, 1, 2, 3, 4])
+    cm_df = pd.DataFrame(
+        cm,
+        index=[f"واقعی: {TOPIC_NAMES[i+1]}" for i in range(5)],
+        columns=[f"پیش‌بینی: {TOPIC_NAMES[i+1]}" for i in range(5)],
+    )
+    print(f"\n=== ماتریس درهم‌ریختگی — {name} ===")
+    print(cm_df)
+    return cm
+
+nb_cm = print_confusion("Naive Bayes", y_test_arr, nb_preds)
+bert_cm = print_confusion("BERT", y_test_arr, bert_preds)
+
+# ---------------------------------------------------------------
+# ۵. شناسایی موضوعاتی که بیشترین نرخ خطا را دارند (برای هر مدل)
+# ---------------------------------------------------------------
+def error_rate_per_topic(name, cm):
+    print(f"\n=== نرخ خطا به تفکیک موضوع — {name} ===")
+    rows = []
+    for i in range(5):
+        total = cm[i].sum()
+        correct = cm[i][i]
+        error_rate = 1 - (correct / total) if total > 0 else 0
+        rows.append({"موضوع": TOPIC_NAMES[i+1], "تعداد نمونه": total,
+                      "درست": correct, "نرخ خطا": f"{error_rate:.2%}"})
+    result = pd.DataFrame(rows).sort_values("نرخ خطا", ascending=False)
+    print(result.to_string(index=False))
+    return result
+
+nb_error_by_topic = error_rate_per_topic("Naive Bayes", nb_cm)
+bert_error_by_topic = error_rate_per_topic("BERT", bert_cm)
+
+# ---------------------------------------------------------------
+# ۶. استخراج نمونه‌های اشتباه طبقه‌بندی‌شده (برای هر دو مدل هم‌زمان)
+#    این نمونه‌ها برای بخش تحلیل کیفی در فصل پنجم استفاده می‌شوند.
+# ---------------------------------------------------------------
+results_table = pd.DataFrame({
+    "Project": projects_test,
+    "Title": titles_test,
+    "True Topic": y_test_arr + 1,
+    "NB Prediction": nb_preds + 1,
+    "BERT Prediction": bert_preds + 1,
+    "NB Correct": nb_preds == y_test_arr,
+    "BERT Correct": bert_preds == y_test_arr,
+})
+
+both_wrong = results_table[(~results_table["NB Correct"]) & (~results_table["BERT Correct"])]
+only_bert_wrong = results_table[(results_table["NB Correct"]) & (~results_table["BERT Correct"])]
+only_nb_wrong = results_table[(~results_table["NB Correct"]) & (results_table["BERT Correct"])]
+
+print(f"\nتعداد نمونه‌هایی که هر دو مدل اشتباه کردند: {len(both_wrong)}")
+print(f"تعداد نمونه‌هایی که فقط BERT اشتباه کرد: {len(only_bert_wrong)}")
+print(f"تعداد نمونه‌هایی که فقط Naive Bayes اشتباه کرد: {len(only_nb_wrong)}")
+
+print("\n=== نمونه‌ای از گزارش‌هایی که هر دو مدل در آن‌ها اشتباه کردند ===")
+print(both_wrong[["Project", "Title", "True Topic", "NB Prediction", "BERT Prediction"]].head(10).to_string(index=False))
+
+print("\n=== نمونه‌ای از گزارش‌هایی که فقط BERT در آن‌ها اشتباه کرد (نایو بیز درست بود) ===")
+print(only_bert_wrong[["Project", "Title", "True Topic", "BERT Prediction"]].head(10).to_string(index=False))
+
+# ---------------------------------------------------------------
+# ۷. ذخیره خروجی‌ها برای استفاده در نگارش فصل پنجم
+# ---------------------------------------------------------------
+results_table.to_csv("error_analysis_full_results.csv", index=False, encoding="utf-8-sig")
+both_wrong.to_csv("error_analysis_both_wrong.csv", index=False, encoding="utf-8-sig")
+nb_error_by_topic.to_csv("error_analysis_nb_by_topic.csv", index=False, encoding="utf-8-sig")
+bert_error_by_topic.to_csv("error_analysis_bert_by_topic.csv", index=False, encoding="utf-8-sig")
+
+print("\nتمامی فایل‌های تحلیل خطا ذخیره شدند:")
+print("  - error_analysis_full_results.csv")
+print("  - error_analysis_both_wrong.csv")
+print("  - error_analysis_nb_by_topic.csv")
+print("  - error_analysis_bert_by_topic.csv")
