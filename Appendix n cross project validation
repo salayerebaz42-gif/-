@@ -1,0 +1,116 @@
+# پیوست ن: کد اعتبارسنجی بین‌پروژه‌ای (Cross-Project Validation)
+# این کد میزان تعمیم‌پذیری مدل‌ها را با آموزش روی دو پروژه و آزمون روی
+# پروژه سوم (که در فرآیند آموزش حضور نداشته) ارزیابی می‌کند.
+#
+# پیش‌نیاز: فایل all_bugs_topics.csv باید ستونی برای مشخص کردن نام پروژه
+# هر گزارش داشته باشد (مثلاً ستون 'project' با مقادیر 'firefox',
+# 'eclipse', 'vscode'). اگر چنین ستونی موجود نیست، پیش از اجرای این
+# کد باید آن را اضافه کرد (بر اساس فایل منبع هر گزارش).
+
+import pandas as pd
+from scipy.sparse import hstack, csr_matrix
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
+
+RANDOM_STATE = 42
+
+# ---------------------------------------------------------------
+# ۱. بارگذاری داده‌ها
+# ---------------------------------------------------------------
+df = pd.read_csv("all_bugs_topics.csv")
+
+# بررسی اولیه: نام‌های احتمالی پروژه‌ها را در ستون 'project' چاپ می‌کند
+# تا از تطابق صحیح مقادیر (حروف بزرگ/کوچک و ...) مطمئن شویم.
+print("مقادیر ستون project:", df['project'].unique())
+
+PROJECTS = {
+    "firefox": "Mozilla Firefox",
+    "eclipse": "Eclipse JDT",
+    "vscode": "VS Code",
+}
+
+# ---------------------------------------------------------------
+# ۲. تعریف مدل‌ها
+# ---------------------------------------------------------------
+def build_models():
+    return {
+        "Naive Bayes": MultinomialNB(),
+        "SVM": SVC(kernel='linear', random_state=RANDOM_STATE),
+        "Random Forest": RandomForestClassifier(n_estimators=100, random_state=RANDOM_STATE),
+        "Neural Network": MLPClassifier(hidden_layer_sizes=(100,), random_state=RANDOM_STATE, max_iter=500),
+    }
+
+# ---------------------------------------------------------------
+# ۳. تابع اجرای یک سناریوی اعتبارسنجی بین‌پروژه‌ای
+# ---------------------------------------------------------------
+def run_cross_project(train_projects, test_project, scenario_name):
+    train_df = df[df['project'].isin(train_projects)]
+    test_df = df[df['project'] == test_project]
+
+    X_train_text = train_df['clean_title'].astype(str)
+    X_test_text = test_df['clean_title'].astype(str)
+    y_train = train_df['topic']
+    y_test = test_df['topic']
+
+    vectorizer = TfidfVectorizer(max_features=1000)
+    X_train = vectorizer.fit_transform(X_train_text)
+    X_test = vectorizer.transform(X_test_text)
+
+    results = []
+    for name, model in build_models().items():
+        model.fit(X_train, y_train)
+        y_pred = model.predict(X_test)
+        results.append({
+            "Scenario": scenario_name,
+            "Model": name,
+            "Train Size": len(train_df),
+            "Test Size": len(test_df),
+            "Accuracy": accuracy_score(y_test, y_pred),
+            "Precision": precision_score(y_test, y_pred, average='weighted', zero_division=0),
+            "Recall": recall_score(y_test, y_pred, average='weighted', zero_division=0),
+            "F1-Score": f1_score(y_test, y_pred, average='weighted', zero_division=0),
+        })
+    return results
+
+# ---------------------------------------------------------------
+# ۴. اجرای سه سناریو طبق درخواست استاد راهنما
+# ---------------------------------------------------------------
+all_results = []
+
+print("\nسناریوی ۱: آموزش روی Firefox + Eclipse، آزمون روی VS Code ...")
+all_results += run_cross_project(
+    [PROJECTS["firefox"], PROJECTS["eclipse"]], PROJECTS["vscode"],
+    "Firefox+Eclipse -> VSCode"
+)
+
+print("سناریوی ۲: آموزش روی Firefox + VS Code، آزمون روی Eclipse ...")
+all_results += run_cross_project(
+    [PROJECTS["firefox"], PROJECTS["vscode"]], PROJECTS["eclipse"],
+    "Firefox+VSCode -> Eclipse"
+)
+
+print("سناریوی ۳: آموزش روی Eclipse + VS Code، آزمون روی Firefox ...")
+all_results += run_cross_project(
+    [PROJECTS["eclipse"], PROJECTS["vscode"]], PROJECTS["firefox"],
+    "Eclipse+VSCode -> Firefox"
+)
+
+# ---------------------------------------------------------------
+# ۵. نمایش و ذخیره جدول نهایی
+# ---------------------------------------------------------------
+results_df = pd.DataFrame(all_results)
+results_df[["Accuracy", "Precision", "Recall", "F1-Score"]] = (
+    results_df[["Accuracy", "Precision", "Recall", "F1-Score"]] * 100
+).round(2)
+
+pivot_table = results_df.pivot(index="Model", columns="Scenario", values="Accuracy")
+print("\n=== جدول مقایسه‌ای دقت (Accuracy %) بر اساس سناریوی بین‌پروژه‌ای ===")
+print(pivot_table)
+
+results_df.to_csv("cross_project_validation_results.csv", index=False, encoding="utf-8-sig")
+print("\nنتایج کامل در فایل cross_project_validation_results.csv ذخیره شد.")
