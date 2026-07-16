@@ -1,0 +1,127 @@
+# پیوست س: کد تنظیم ابرپارامترهای BERT (Hyperparameter Tuning)
+# این کد ترکیب‌های مختلفی از نرخ یادگیری (Learning Rate)، اندازه دسته
+# (Batch Size) و تعداد دوره‌های آموزش (Epochs) را بررسی کرده و بهترین
+# ترکیب را بر اساس دقت روی مجموعه آزمون گزارش می‌دهد.
+#
+# توجه: این کد برای اجرا روی Google Colab با GPU (ترجیحاً T4) طراحی
+# شده است، مطابق با محیط اجرای اصلی مدل BERT در پیوست ک/ل.
+
+import pandas as pd
+import numpy as np
+import torch
+from torch.utils.data import TensorDataset, DataLoader
+from transformers import BertTokenizer, BertForSequenceClassification
+from torch.optim import AdamW
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, f1_score
+import itertools
+import time
+
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"دستگاه مورد استفاده: {device}")
+
+# ---------------------------------------------------------------
+# ۱. بارگذاری داده‌ها (همان تقسیم‌بندی استفاده‌شده در مدل اصلی)
+# ---------------------------------------------------------------
+df = pd.read_csv("all_bugs_topics.csv")
+X = df['clean_title'].astype(str).tolist()
+y = (df['topic'] - 1).tolist()   # برچسب‌ها باید از صفر شروع شوند (۰ تا ۴)
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42, stratify=y
+)
+
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+def tokenize(texts):
+    return tokenizer(texts, padding=True, truncation=True, max_length=64, return_tensors='pt')
+
+train_enc = tokenize(X_train)
+test_enc = tokenize(X_test)
+
+train_dataset = TensorDataset(
+    train_enc['input_ids'], train_enc['attention_mask'], torch.tensor(y_train)
+)
+test_dataset = TensorDataset(
+    test_enc['input_ids'], test_enc['attention_mask'], torch.tensor(y_test)
+)
+
+# ---------------------------------------------------------------
+# ۲. تعریف شبکه جستجوی ابرپارامترها
+#    توجه: تعداد ترکیب‌ها عمداً محدود نگه داشته شده تا زمان اجرا روی
+#    Colab معقول بماند. در صورت نیاز می‌توان مقادیر را گسترش داد.
+# ---------------------------------------------------------------
+learning_rates = [2e-5, 5e-5]
+batch_sizes = [8, 16]
+epoch_options = [3, 5]
+
+param_grid = list(itertools.product(learning_rates, batch_sizes, epoch_options))
+print(f"تعداد کل ترکیب‌های ابرپارامتر: {len(param_grid)}")
+
+def train_and_evaluate(lr, batch_size, epochs):
+    model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=5)
+    model.to(device)
+
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    test_loader = DataLoader(test_dataset, batch_size=batch_size)
+
+    optimizer = AdamW(model.parameters(), lr=lr)
+
+    model.train()
+    for epoch in range(epochs):
+        total_loss = 0
+        for batch in train_loader:
+            input_ids, attention_mask, labels = [b.to(device) for b in batch]
+            optimizer.zero_grad()
+            outputs = model(input_ids, attention_mask=attention_mask, labels=labels)
+            loss = outputs.loss
+            loss.backward()
+            optimizer.step()
+            total_loss += loss.item()
+        print(f"    epoch {epoch+1}/{epochs} - loss: {total_loss/len(train_loader):.4f}")
+
+    model.eval()
+    all_preds, all_labels = [], []
+    with torch.no_grad():
+        for batch in test_loader:
+            input_ids, attention_mask, labels = [b.to(device) for b in batch]
+            outputs = model(input_ids, attention_mask=attention_mask)
+            preds = torch.argmax(outputs.logits, dim=1)
+            all_preds.extend(preds.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
+
+    acc = accuracy_score(all_labels, all_preds)
+    f1 = f1_score(all_labels, all_preds, average='weighted')
+    return acc, f1
+
+# ---------------------------------------------------------------
+# ۳. اجرای جستجو بر روی تمامی ترکیب‌ها
+# ---------------------------------------------------------------
+results = []
+
+for lr, batch_size, epochs in param_grid:
+    print(f"\nدر حال آموزش: LR={lr}, Batch Size={batch_size}, Epochs={epochs}")
+    start = time.time()
+    acc, f1 = train_and_evaluate(lr, batch_size, epochs)
+    duration = time.time() - start
+
+    print(f"  -> دقت={acc:.2%} | F1={f1:.2%} | زمان={duration/60:.1f} دقیقه")
+    results.append({
+        "Learning Rate": lr,
+        "Batch Size": batch_size,
+        "Epochs": epochs,
+        "Accuracy": round(acc * 100, 2),
+        "F1-Score": round(f1 * 100, 2),
+        "Time (min)": round(duration / 60, 1),
+    })
+
+# ---------------------------------------------------------------
+# ۴. نمایش و ذخیره جدول نهایی، مرتب‌شده بر اساس بهترین دقت
+# ---------------------------------------------------------------
+results_df = pd.DataFrame(results).sort_values("Accuracy", ascending=False)
+print("\n=== جدول نتایج تنظیم ابرپارامترهای BERT (مرتب‌شده بر اساس دقت) ===")
+print(results_df.to_string(index=False))
+
+results_df.to_csv("bert_hyperparameter_tuning_results.csv", index=False, encoding="utf-8-sig")
+print("\nنتایج کامل در فایل bert_hyperparameter_tuning_results.csv ذخیره شد.")
+print(f"\nبهترین ترکیب: {results_df.iloc[0].to_dict()}")
