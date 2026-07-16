@@ -1,0 +1,161 @@
+# پیوست ع: کد آزمون معناداری آماری (McNemar Test)
+# این کد عملکرد دو مدل نایو بیز و BERT را بر روی دقیقاً همان مجموعه
+# آزمون مقایسه کرده و با استفاده از آزمون McNemar مشخص می‌کند که آیا
+# تفاوت دقت این دو مدل از نظر آماری معنادار است یا خیر.
+#
+# توجه: باید روی Google Colab با GPU اجرا شود (به دلیل نیاز BERT).
+
+import pandas as pd
+import numpy as np
+import torch
+from torch.utils.data import TensorDataset, DataLoader
+from torch.optim import AdamW
+from transformers import BertTokenizer, BertForSequenceClassification
+
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+from statsmodels.stats.contingency_tables import mcnemar
+
+RANDOM_STATE = 42
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+print(f"دستگاه مورد استفاده: {device}")
+
+# ---------------------------------------------------------------
+# ۱. بارگذاری داده‌ها و تقسیم مشترک (دقیقاً یکسان برای هر دو مدل)
+# ---------------------------------------------------------------
+df = pd.read_csv("all_bugs_topics.csv")
+texts = df['clean_title'].astype(str).tolist()
+labels = (df['topic'] - 1).tolist()   # صفر-پایه برای BERT
+
+# مطابق دقیق با پیوست ط: TF-IDF روی کل مجموعه داده fit می‌شود و سپس تقسیم انجام می‌گیرد
+vectorizer = TfidfVectorizer(max_features=1000)
+X_tfidf_full = vectorizer.fit_transform(texts)
+
+idx_train, idx_test = train_test_split(
+    df.index, test_size=0.2, random_state=RANDOM_STATE
+)
+
+texts_train = df.loc[idx_train, 'clean_title'].astype(str).tolist()
+texts_test = df.loc[idx_test, 'clean_title'].astype(str).tolist()
+y_train = (df.loc[idx_train, 'topic'] - 1).tolist()
+y_test = (df.loc[idx_test, 'topic'] - 1).tolist()
+
+# ---------------------------------------------------------------
+# ۲. آموزش و ارزیابی Naive Bayes (روی TF-IDF)
+# ---------------------------------------------------------------
+print("\nدر حال آموزش Naive Bayes ...")
+X_train_tfidf = X_tfidf_full[idx_train]
+X_test_tfidf = X_tfidf_full[idx_test]
+
+nb_model = MultinomialNB()
+nb_model.fit(X_train_tfidf, y_train)
+nb_preds = nb_model.predict(X_test_tfidf)
+
+nb_acc = accuracy_score(y_test, nb_preds)
+print(f"دقت Naive Bayes: {nb_acc:.2%}")
+
+# ---------------------------------------------------------------
+# ۳. آموزش و ارزیابی BERT (با بهترین ابرپارامترهای یافته‌شده در بخش قبل)
+# ---------------------------------------------------------------
+print("\nدر حال آموزش BERT (LR=2e-5, Batch=8, Epochs=5) ...")
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
+
+def tokenize(texts):
+    return tokenizer(texts, padding=True, truncation=True, max_length=64, return_tensors='pt')
+
+train_enc = tokenize(texts_train)
+test_enc = tokenize(texts_test)
+
+train_dataset = TensorDataset(train_enc['input_ids'], train_enc['attention_mask'], torch.tensor(y_train))
+test_dataset = TensorDataset(test_enc['input_ids'], test_enc['attention_mask'], torch.tensor(y_test))
+
+train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
+test_loader = DataLoader(test_dataset, batch_size=8)
+
+bert_model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=5)
+bert_model.to(device)
+optimizer = AdamW(bert_model.parameters(), lr=2e-5)
+
+bert_model.train()
+for epoch in range(5):
+    total_loss = 0
+    for batch in train_loader:
+        input_ids, attention_mask, batch_labels = [b.to(device) for b in batch]
+        optimizer.zero_grad()
+        outputs = bert_model(input_ids, attention_mask=attention_mask, labels=batch_labels)
+        loss = outputs.loss
+        loss.backward()
+        optimizer.step()
+        total_loss += loss.item()
+    print(f"    epoch {epoch+1}/5 - loss: {total_loss/len(train_loader):.4f}")
+
+bert_model.eval()
+bert_preds = []
+with torch.no_grad():
+    for batch in test_loader:
+        input_ids, attention_mask, _ = [b.to(device) for b in batch]
+        outputs = bert_model(input_ids, attention_mask=attention_mask)
+        preds = torch.argmax(outputs.logits, dim=1)
+        bert_preds.extend(preds.cpu().numpy())
+
+bert_preds = np.array(bert_preds)
+bert_acc = accuracy_score(y_test, bert_preds)
+print(f"دقت BERT: {bert_acc:.2%}")
+
+# ---------------------------------------------------------------
+# ۴. ساخت جدول توافقی ۲×۲ (Contingency Table) برای آزمون McNemar
+# ---------------------------------------------------------------
+y_test_arr = np.array(y_test)
+nb_correct = (nb_preds == y_test_arr)
+bert_correct = (bert_preds == y_test_arr)
+
+# a: هر دو مدل درست    b: فقط نایو بیز درست
+# c: فقط BERT درست     d: هر دو مدل غلط
+a = np.sum(nb_correct & bert_correct)
+b = np.sum(nb_correct & ~bert_correct)
+c = np.sum(~nb_correct & bert_correct)
+d = np.sum(~nb_correct & ~bert_correct)
+
+contingency_table = [[a, b], [c, d]]
+print("\nجدول توافقی (Contingency Table):")
+print(f"           BERT درست   BERT غلط")
+print(f"NB درست    {a:<10}  {b}")
+print(f"NB غلط     {c:<10}  {d}")
+
+# ---------------------------------------------------------------
+# ۵. اجرای آزمون McNemar
+#    از تصحیح پیوستگی (continuity correction) استفاده می‌شود، مگر
+#    آنکه b+c کوچک باشد که در آن صورت آزمون دقیق (exact) اعمال می‌گردد.
+# ---------------------------------------------------------------
+use_exact = (b + c) < 25
+result = mcnemar(contingency_table, exact=use_exact, correction=not use_exact)
+
+print(f"\n=== نتیجه آزمون McNemar (Naive Bayes در برابر BERT) ===")
+print(f"آماره آزمون: {result.statistic:.4f}")
+print(f"p-value: {result.pvalue:.6f}")
+
+alpha = 0.05
+if result.pvalue < alpha:
+    print(f"نتیجه: تفاوت عملکرد دو مدل از نظر آماری معنادار است (p < {alpha}).")
+else:
+    print(f"نتیجه: تفاوت عملکرد دو مدل از نظر آماری معنادار نیست (p >= {alpha}).")
+
+# ---------------------------------------------------------------
+# ۶. ذخیره نتایج
+# ---------------------------------------------------------------
+summary = pd.DataFrame([{
+    "Naive Bayes Accuracy": round(nb_acc * 100, 2),
+    "BERT Accuracy": round(bert_acc * 100, 2),
+    "Both Correct (a)": a,
+    "Only NB Correct (b)": b,
+    "Only BERT Correct (c)": c,
+    "Both Wrong (d)": d,
+    "McNemar Statistic": round(result.statistic, 4),
+    "p-value": round(result.pvalue, 6),
+    "Significant (alpha=0.05)": result.pvalue < alpha,
+}])
+summary.to_csv("mcnemar_test_results.csv", index=False, encoding="utf-8-sig")
+print("\nنتایج کامل در فایل mcnemar_test_results.csv ذخیره شد.")
