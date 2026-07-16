@@ -1,0 +1,102 @@
+# پیوست ص: کد مدل Ensemble (Voting Classifier)
+# این کد یک مدل رأی‌گیری (Voting) مبتنی بر سه مدل برتر کلاسیک—نایو بیز،
+# SVM و شبکه عصبی—می‌سازد و عملکرد آن را با بهترین مدل منفرد (نایو بیز
+# با دقت ۸۴٫۹۷٪) مقایسه می‌کند.
+
+import pandas as pd
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import MultinomialNB
+from sklearn.svm import SVC
+from sklearn.neural_network import MLPClassifier
+from sklearn.ensemble import VotingClassifier
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+
+RANDOM_STATE = 42
+
+# ---------------------------------------------------------------
+# ۱. بارگذاری داده‌ها و تقسیم (دقیقاً مطابق آزمایش اصلی مقایسه مدل‌ها،
+#    بدون stratify، برای قابلیت مقایسه مستقیم با دقت ۸۴٫۹۷٪ گزارش‌شده)
+# ---------------------------------------------------------------
+df = pd.read_csv("all_bugs_topics.csv")
+X = df['clean_title'].astype(str)
+y = df['topic']
+
+vectorizer = TfidfVectorizer(max_features=1000)
+X_vec = vectorizer.fit_transform(X)
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X_vec, y, test_size=0.2, random_state=RANDOM_STATE
+)
+
+# ---------------------------------------------------------------
+# ۲. تعریف سه مدل پایه با تنظیمات مشابه آزمایش اصلی
+# ---------------------------------------------------------------
+nb_clf = MultinomialNB()
+svm_clf = SVC(kernel='linear', probability=True, random_state=RANDOM_STATE)
+nn_clf = MLPClassifier(hidden_layer_sizes=(100,), random_state=RANDOM_STATE, max_iter=300)
+
+# ---------------------------------------------------------------
+# ۳. ارزیابی هر مدل به‌صورت منفرد (برای مقایسه مبنا)
+# ---------------------------------------------------------------
+def evaluate_model(name, model):
+    model.fit(X_train, y_train)
+    y_pred = model.predict(X_test)
+    return {
+        "Model": name,
+        "Accuracy": round(accuracy_score(y_test, y_pred) * 100, 2),
+        "Precision": round(precision_score(y_test, y_pred, average='weighted', zero_division=0) * 100, 2),
+        "Recall": round(recall_score(y_test, y_pred, average='weighted', zero_division=0) * 100, 2),
+        "F1-Score": round(f1_score(y_test, y_pred, average='weighted', zero_division=0) * 100, 2),
+    }
+
+results = []
+print("در حال آموزش مدل‌های پایه به‌صورت منفرد ...")
+results.append(evaluate_model("Naive Bayes (منفرد)", nb_clf))
+results.append(evaluate_model("SVM (منفرد)", svm_clf))
+results.append(evaluate_model("Neural Network (منفرد)", nn_clf))
+
+# ---------------------------------------------------------------
+# ۴. ساخت و ارزیابی مدل Ensemble (Soft Voting)
+#    توجه: مدل‌های پایه دوباره از ابتدا آموزش داده می‌شوند تا از نشتی
+#    اطلاعات میان ارزیابی منفرد و آموزش داخل VotingClassifier جلوگیری شود.
+# ---------------------------------------------------------------
+print("در حال آموزش مدل Ensemble (Soft Voting) ...")
+ensemble_soft = VotingClassifier(
+    estimators=[
+        ('nb', MultinomialNB()),
+        ('svm', SVC(kernel='linear', probability=True, random_state=RANDOM_STATE)),
+        ('nn', MLPClassifier(hidden_layer_sizes=(100,), random_state=RANDOM_STATE, max_iter=300)),
+    ],
+    voting='soft'
+)
+results.append(evaluate_model("Ensemble (Soft Voting)", ensemble_soft))
+
+# ---------------------------------------------------------------
+# ۵. ساخت و ارزیابی مدل Ensemble (Hard Voting) برای مقایسه تکمیلی
+# ---------------------------------------------------------------
+print("در حال آموزش مدل Ensemble (Hard Voting) ...")
+ensemble_hard = VotingClassifier(
+    estimators=[
+        ('nb', MultinomialNB()),
+        ('svm', SVC(kernel='linear', random_state=RANDOM_STATE)),
+        ('nn', MLPClassifier(hidden_layer_sizes=(100,), random_state=RANDOM_STATE, max_iter=300)),
+    ],
+    voting='hard'
+)
+results.append(evaluate_model("Ensemble (Hard Voting)", ensemble_hard))
+
+# ---------------------------------------------------------------
+# ۶. نمایش و ذخیره جدول نهایی مقایسه
+# ---------------------------------------------------------------
+results_df = pd.DataFrame(results).sort_values("Accuracy", ascending=False)
+print("\n=== جدول مقایسه‌ای: مدل‌های منفرد در برابر Ensemble ===")
+print(results_df.to_string(index=False))
+
+best_single_acc = max(r["Accuracy"] for r in results[:3])
+ensemble_soft_acc = results[3]["Accuracy"]
+improvement = ensemble_soft_acc - best_single_acc
+print(f"\nمقایسه با بهترین مدل منفرد: تفاوت = {improvement:+.2f} واحد درصد")
+
+results_df.to_csv("ensemble_results.csv", index=False, encoding="utf-8-sig")
+print("\nنتایج کامل در فایل ensemble_results.csv ذخیره شد.")
