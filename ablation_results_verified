@@ -1,0 +1,13 @@
+Mode,Model,Accuracy,F1
+TF-IDF فقط,Naive Bayes,84.47,84.43
+TF-IDF فقط,SVM,80.8,80.79
+TF-IDF فقط,Neural Network,83.31,83.3
+TF-IDF فقط,Random Forest,64.11,64.09
+LDA فقط,Naive Bayes,32.05,24.0
+LDA فقط,SVM,29.88,22.71
+LDA فقط,Neural Network,31.22,24.85
+LDA فقط,Random Forest,31.89,31.17
+TF-IDF + LDA,Naive Bayes,81.14,81.06
+TF-IDF + LDA,SVM,81.47,81.43
+TF-IDF + LDA,Neural Network,82.47,82.47
+TF-IDF + LDA,Random Forest,61.77,61.14
